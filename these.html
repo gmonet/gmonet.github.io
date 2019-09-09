@@ -1,240 +1,410 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="these.css">
+
+</head>
 <body>
-
-<h1>Thèse</h1>
-Geoffrey Monet
-
-<div id="Chapitre-1">
-<h2>Chapitre I</h2>
-</div>
-
-<div id="Chapitre-2">
-<h2>Chapitre II</h2>
-    <div id="XANES">
-        <h3>XANES</h3>
-        <script src="figures/XANES.js" id="80ea7d15-08bf-48de-bf0e-7771156f879f" async></script>
+  <header>
+    <strong>Thèse - </strong> <em>Nanotubes géo-inspirés : structure atomique, transformation en température et dynamiques corrélées nanotube-eau moléculaire</em> -  Geoffrey Monet
+    
+  </header>
+  
+  <div class="container-fluid" style="max-width: 1000px; border-left-width: 1px; border-left-style: solid; border-right-width: 1px; border-right-style: solid ">
+    <!-- En tête -->
+    <div>
+      <p style="text-align: center; font-size: 30pt ">These
+      </p>
+      <p style="text-align: center; font-size: 25pt">Nanotubes géo-inspirés : structure atomique, transformation en température et dynamiques corrélées nanotube-eau moléculaire
+        </p>
+      <p style="text-align: center; font-size: 18pt ; font-style: italic">Geoffrey Monet
+      </p>
     </div>
 
-</div>
+    <!-- Chapitre 1 -->
+    <h2 style="background-color: lightsalmon">Chapitre I - <small>Les nanotubes d’imogolite, après 60 ans d’investigation</small></h2>
+    <div id="Chapitre-1" class="chapter" style="border-color: lightsalmon;">
+      <iframe width="100%" height="400px" src="https://www.youtube.com/embed/aH6Mv2tW6w8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <!-- Chapitre 2 -->
+    <h2 style="background-color: lightblue">Chapitre II - <small>Résolution de la structure des nanotubes d’imogolite</small></h2>
+    <div id="Chapitre-2" class="chapter" style="border-color: lightblue;">
+      <!-- collapse XANES -->
+      <p>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseXANES" aria-expanded="false" aria-controls="collapseXANES">
+          Figure intéractive XANES
+        </button>
+      </p>
+      <div class="collapse" id="collapseXANES">
+        <div class="card card-body">
+          <figure class="figure">
+            <script src="figures/XANES.js" id="80ea7d15-08bf-48de-bf0e-7771156f879f" async></script>
+            <figcaption class="figure-caption">Ge-CH3 twisting.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
 
-<div id="Chapitre-3">
-<h2>Chapitre III</h2>
-</div>
+    <!-- Chapitre 3 -->
+    <h2 style="background-color: orchid">Chapitre III - <small>Transformation en température des nanotubes d’imogolite</small></h2>
+    <div id="Chapitre-3" class="chapter" style="border-color: orchid;">
+      <p>
 
-<div id="Chapitre-4">
-<h2>Chapitre IV</h2>
+      </p>
+    </div>
 
-<h3>Filtrage GeCH3</h3>
+    <!-- Chapitre 4 -->
+    <h2 style="background-color: lightcoral">Chapitre IV - <small>Confinement de l’eau dans des nanotubes hydrophiles</small></h2>
+    <div id="Chapitre-4" class="chapter" style="border-color: lightcoral;">
+      
 
-<h4>Twisting CH3</h4> 
-<iframe width="100%" height="400"
-        src="https://www.youtube.com/embed/UXQUrPzYCkY" 
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h3>Filtrage GeCH3</h3>
 
-<h4>Stretching CH3</h4>
-<iframe width="100%" height="400"
-        src="https://www.youtube.com/embed/4_doifJ1fDA" 
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- Tabs for GeCH3 video -->
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link" id="pills-GeCH3-twist-tab" data-toggle="pill" href="#pills-GeCH3-twist" role="tab" aria-controls="pills-GeCH3-twist" aria-selected="False">Twisting</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-GeCH3-stret-tab" data-toggle="pill" href="#pills-GeCH3-stret" role="tab" aria-controls="pills-GeCH3-stret" aria-selected="false">Stretching</a>
+        </li>
+      </ul>
+      <!-- Tab content for GeCH3 video -->
+      <div class="tab-content" id="pills-tabContent">
+        <!-- GeCH3 twist -->
+        <div class="tab-pane fade show" id="pills-GeCH3-twist" role="tabpanel" aria-labelledby="pills-home-tab">
+          <figure class="figure">
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/UXQUrPzYCkY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <figcaption class="figure-caption">Ge-CH3 twisting.</figcaption>
+          </figure>
+        </div>
+        <!-- GeCH3 stret -->
+        <div class="tab-pane fade" id="pills-GeCH3-stret" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <figure class="figure">
+              <iframe class="youtube-video" 
+              src="https://www.youtube.com/embed/4_doifJ1fDA" 
+              frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <figcaption class="figure-caption">Ge-CH3 stretching.</figcaption>
+          </figure>
+        </div>
+      </div>
 
 
-<h3>Filtrage GeOH</h3>
-<div id="Chapitre-4_GeOH">
-<a id="tocVideos"></a>
+      <h3>Filtrage GeOH</h3>
+      <!-- <div id="Chapitre-4_GeOH"> -->
 
-<div id="Hout" >
-<h4>Hout</h4>
-<table style="width: 100%">
-    <tr>
-        <th></th>
-        <th>Sec</th>
-        <th>pHyd</th>
-    </tr>
-    <tr>
-        <td>
-            Hout A Bending
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/L5glCUrt42g" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/l8gU1JEqE1M"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Hout B Bending
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/m6sinzeKwc8" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/CZRCs37cXPw"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Hout C Bending
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/BDKGDZ2ywn0" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/DqoEcYmMkLg"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-    </tr>
-    <tr>
-            <td>
-                Hout A Stretching
-            </td>
-            <td>
-                <iframe width="100%" height="400"
-                    src="https://www.youtube.com/embed/Exq1NgVvaPw" 
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-            <td>
-                <iframe width="100%" height="400"
-                    src="https://www.youtube.com/embed/5oBkUGO2ZH4"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Hout B/C Stretching
-            </td>
-            <td>
-                <iframe width="100%" height="400"
-                    src="https://www.youtube.com/embed/0DOgqdhQVZw" 
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-            <td>
-                <iframe width="100%" height="400"
-                    src="https://www.youtube.com/embed/abAZHLEB9N0"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </td>
-        </tr>
-</table>
-</div>
+      <!-- Tabs for GeOH video -->
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link" id="pills-GeOH-dry-tab" data-toggle="pill" href="#pills-GeOH-dry" role="tab" aria-controls="pills-GeOH-dry" aria-selected="False">Nanotube GeOH Sec (sec)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-GeOH-pHyd-tab" data-toggle="pill" href="#pills-GeOH-pHyd" role="tab" aria-controls="pills-GeOH-pHyd" aria-selected="false">Nanotube GeOH partiellement hydraté (pHyd)</a>
+        </li>
+      </ul>
 
-<div id="Hin" >
-<h4>Hin</h4>
-<table style="width: 100%">
-    <tr>
-        <th></th>
-        <th>Sec</th>
-        <th>pHyd</th>
-    </tr>
-    <tr>
-        <td>
-            Twitting
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/8HJitv4wDBg" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/RkIPiaJMYs4"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Scissoring
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/o8FljIst79I" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/tu2GnEy1MTM"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Stretching
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/w0gFGxQ6cFM" 
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/cIq8u2Z0cdQ"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-    </tr>
-</table>
-</div>
+      <!-- Tab content for GeOH video -->
+      <div class="tab-content" id="pills-tabContent">
+        <!-- GeOH dry -->
+        <div class="tab-pane fade show" id="pills-GeOH-dry" role="tabpanel" aria-labelledby="pills-home-tab">
+          <!-- Tabs for GeOH dry -->
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" id="pills-GeOH-dry-Hout-tab" data-toggle="pill" href="#pills-GeOH-dry-Hout" role="tab" aria-controls="pills-GeOH-dry-Hout" aria-selected="False">Hout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-GeOH-dry-Hin-tab" data-toggle="pill" href="#pills-GeOH-dry-Hin" role="tab" aria-controls="pills-GeOH-dry-Hin" aria-selected="False">Hin</a>
+            </li>
+          </ul>
 
-<div id="HH2O" >
-<h4>HH2O</h4>
-<table style="width: 100%">
-    <tr>
-        <th></th>
-        <th>pHyd</th>
-    </tr>
-    <tr>
-        <td>
-            Translation
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/jaranrk1YMw"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Libration
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/ZH20JuEhths"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Bending
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/3S4W-A0FlNI"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Stretching
-        </td>
-        <td>
-            <iframe width="100%" height="400"
-                src="https://www.youtube.com/embed/pJM9meR4lGM"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </td>
-    </tr>
-</table>
-</div>
-</div>
-</div>
+          <!-- Tab content for GeOH dry -->
+          <div class="tab-content" id="pills-tabContent">
+            <!-- GeOH dry Hout -->
+            <div class="tab-pane fade show" id="pills-GeOH-dry-Hout" role="tabpanel" aria-labelledby="pills-home-tab">
+              <!-- Tabs GeOH dry Hout -->
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-dry-Hout-bendA-tab" data-toggle="pill" href="#pills-GeOH-dry-Hout-bendA" role="tab" aria-controls="pills-GeOH-dry-Hout-bendA" aria-selected="False">Bending A</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-dry-Hout-bendB-tab" data-toggle="pill" href="#pills-GeOH-dry-Hout-bendB" role="tab" aria-controls="pills-GeOH-dry-Hout-bendB" aria-selected="false">Bending B</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-dry-Hout-bendC-tab" data-toggle="pill" href="#pills-GeOH-dry-Hout-bendC" role="tab" aria-controls="pills-GeOH-dry-Hout-bendC" aria-selected="false">Bending C</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-dry-Hout-stretA-tab" data-toggle="pill" href="#pills-GeOH-dry-Hout-stretA" role="tab" aria-controls="pills-GeOH-dry-Hout-stretA" aria-selected="false">Stretching A</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-dry-Hout-stretBC-tab" data-toggle="pill" href="#pills-GeOH-dry-Hout-stretBC" role="tab" aria-controls="pills-GeOH-dry-Hout-stretBC" aria-selected="false">Stretching B et C</a>
+                </li>
+              </ul>
+              <!-- Tab content GeOH dry Hout -->
+              <div class="tab-content" id="pills-tabContent">
+                <!-- Bending A -->
+                <div class="tab-pane fade show" id="pills-GeOH-dry-Hout-bendA" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/L5glCUrt42g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH sec bending A.</figcaption>
+                  </figure>
+                </div>
+                <!-- Bending B -->
+                <div class="tab-pane fade show" id="pills-GeOH-dry-Hout-bendB" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/m6sinzeKwc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH sec bending B.</figcaption>
+                  </figure>
+                </div>
+                <!-- Bending C -->
+                <div class="tab-pane fade show" id="pills-GeOH-dry-Hout-bendC" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/BDKGDZ2ywn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH sec bending C.</figcaption>
+                  </figure>
+                </div>
+                <!-- Stretching A -->
+                <div class="tab-pane fade show" id="pills-GeOH-dry-Hout-stretA" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/Exq1NgVvaPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH sec stretching A.</figcaption>
+                  </figure>
+                </div>
+                <!-- Stretching B et C -->
+                <div class="tab-pane fade show" id="pills-GeOH-dry-Hout-stretBC" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/0DOgqdhQVZw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH sec stretching B et C.</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
 
+            <!-- GeOH dry Hin -->
+            <div class="tab-pane fade show" id="pills-GeOH-dry-Hin" role="tabpanel" aria-labelledby="pills-home-tab">
+              <!-- Tabs GeOH dry Hin -->
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-dry-Hin-twist-tab" data-toggle="pill" href="#pills-GeOH-dry-Hin-twist" role="tab" aria-controls="pills-GeOH-dry-Hin-twist" aria-selected="False">Twisting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-dry-Hin-scisor-tab" data-toggle="pill" href="#pills-GeOH-dry-Hin-scisor" role="tab" aria-controls="pills-GeOH-dry-Hin-scisor" aria-selected="false">Scissoring</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-dry-Hin-stret-tab" data-toggle="pill" href="#pills-GeOH-dry-Hin-stret" role="tab" aria-controls="pills-GeOH-dry-Hin-stret" aria-selected="false">Stretching</a>
+                </li>
+              </ul>
+              <!-- Tab content GeOH dry Hin -->
+              <div class="tab-content" id="pills-tabContent">
+                <!-- Twisting -->
+                <div class="tab-pane fade show" id="pills-GeOH-dry-Hin-twist" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/8HJitv4wDBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH sec Twisting Hin.</figcaption>
+                  </figure>
+                </div>
+                <!-- Scissoring -->
+                <div class="tab-pane fade show" id="pills-GeOH-dry-Hin-scisor" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/o8FljIst79I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH sec Scissoring Hin.</figcaption>
+                  </figure>
+                </div>
+                <!-- Stretching -->
+                <div class="tab-pane fade show" id="pills-GeOH-dry-Hin-stret" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/w0gFGxQ6cFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH sec Stretching Hin.</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GeOH pHyd -->
+        <div class="tab-pane fade show" id="pills-GeOH-pHyd" role="tabpanel" aria-labelledby="pills-home-tab">
+          <!-- Tabs for GeOH pHyd -->
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" id="pills-GeOH-pHyd-Hout-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hout" role="tab" aria-controls="pills-GeOH-pHyd-Hout" aria-selected="False">Hout</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-GeOH-pHyd-Hin-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hin" role="tab" aria-controls="pills-GeOH-pHyd-Hin" aria-selected="False">Hin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-GeOH-pHyd-HH2O-tab" data-toggle="pill" href="#pills-GeOH-pHyd-HH2O" role="tab" aria-controls="pills-GeOH-pHyd-HH2O" aria-selected="False">HH2O</a>
+            </li>
+          </ul>
+          
+          <!-- Tab content for GeOH pHyd -->
+          <div class="tab-content" id="pills-tabContent">
+            <!-- GeOH pHyd Hout -->
+            <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hout" role="tabpanel" aria-labelledby="pills-home-tab">
+              <!-- Tabs GeOH pHyd Hout -->
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-pHyd-Hout-bendA-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hout-bendA" role="tab" aria-controls="pills-GeOH-pHyd-Hout-bendA" aria-selected="False">Bending A</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-pHyd-Hout-bendB-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hout-bendB" role="tab" aria-controls="pills-GeOH-pHyd-Hout-bendB" aria-selected="false">Bending B</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-pHyd-Hout-bendC-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hout-bendC" role="tab" aria-controls="pills-GeOH-pHyd-Hout-bendC" aria-selected="false">Bending C</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-pHyd-Hout-stretA-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hout-stretA" role="tab" aria-controls="pills-GeOH-pHyd-Hout-stretA" aria-selected="false">Stretching A</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-pHyd-Hout-stretBC-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hout-stretBC" role="tab" aria-controls="pills-GeOH-pHyd-Hout-stretBC" aria-selected="false">Stretching B et C</a>
+                </li>
+              </ul>
+              <!-- Tab content GeOH pHyd Hout -->
+              <div class="tab-content" id="pills-tabContent">
+                <!-- Bending A -->
+                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hout-bendA" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/l8gU1JEqE1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH pHyd bending A.</figcaption>
+                  </figure>
+                </div>
+                <!-- Bending B -->
+                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hout-bendB" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/CZRCs37cXPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH pHyd bending B.</figcaption>
+                  </figure>
+                </div>
+                <!-- Bending C -->
+                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hout-bendC" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/DqoEcYmMkLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH pHyd bending C.</figcaption>
+                  </figure>
+                </div>
+                <!-- Stretching A -->
+                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hout-stretA" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/5oBkUGO2ZH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH pHyd stretching A.</figcaption>
+                  </figure>
+                </div>
+                <!-- Stretching B et C -->
+                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hout-stretBC" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/abAZHLEB9N0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH sec stretching B et C.</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <!-- GeOH pHyd Hin -->
+            <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hin" role="tabpanel" aria-labelledby="pills-home-tab">
+              <!-- Tabs GeOH pHyd Hin -->
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-pHyd-Hin-twist-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hin-twist" role="tab" aria-controls="pills-GeOH-pHyd-Hin-twist" aria-selected="False">Twisting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-pHyd-Hin-scisor-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hin-scisor" role="tab" aria-controls="pills-GeOH-pHyd-Hin-scisor" aria-selected="false">Scissoring</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-pHyd-Hin-stret-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hin-stret" role="tab" aria-controls="pills-GeOH-pHyd-Hin-stret" aria-selected="false">Stretching</a>
+                </li>
+              </ul>
+              <!-- Tab content GeOH pHyd Hin -->
+              <div class="tab-content" id="pills-tabContent">
+                <!-- Twisting -->
+                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hin-twist" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/RkIPiaJMYs4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH pHyd Twisting Hin.</figcaption>
+                  </figure>
+                </div>
+                <!-- Scissoring -->
+                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hin-scisor" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/tu2GnEy1MTM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH sec Scissoring Hin.</figcaption>
+                  </figure>
+                </div>
+                <!-- Stretching -->
+                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hin-stret" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/cIq8u2Z0cdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH sec Stretching Hin.</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <!-- GeOH pHyd HH2O -->
+            <div class="tab-pane fade show" id="pills-GeOH-pHyd-HH2O" role="tabpanel" aria-labelledby="pills-home-tab">
+              <!-- Tabs GeOH pHyd HH2O -->
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-pHyd-HH2O-trans-tab" data-toggle="pill" href="#pills-GeOH-pHyd-HH2O-trans" role="tab" aria-controls="pills-GeOH-pHyd-HH2O-trans" aria-selected="False">Translation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-pHyd-HH2O-lib-tab" data-toggle="pill" href="#pills-GeOH-pHyd-HH2O-lib" role="tab" aria-controls="pills-GeOH-pHyd-HH2O-lib" aria-selected="false">Libration</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-pHyd-HH2O-bend-tab" data-toggle="pill" href="#pills-GeOH-pHyd-HH2O-bend" role="tab" aria-controls="pills-GeOH-pHyd-HH2O-bend" aria-selected="false">Bending</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-GeOH-pHyd-HH2O-stret-tab" data-toggle="pill" href="#pills-GeOH-pHyd-HH2O-stret" role="tab" aria-controls="pills-GeOH-pHyd-HH2O-stret" aria-selected="false">Stretching</a>
+                </li>
+              </ul>
+              <!-- Tab content GeOH pHyd HH2O -->
+              <div class="tab-content" id="pills-tabContent">
+                <!-- Translation -->
+                <div class="tab-pane fade show" id="pills-GeOH-pHyd-HH2O-trans" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/jaranrk1YMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH pHyd Translation HH2O.</figcaption>
+                  </figure>
+                </div>
+                <!-- Libration -->
+                <div class="tab-pane fade show" id="pills-GeOH-pHyd-HH2O-lib" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/ZH20JuEhths" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH pHyd Libration HH2O.</figcaption>
+                  </figure>
+                </div>
+                <!-- Bending -->
+                <div class="tab-pane fade show" id="pills-GeOH-pHyd-HH2O-bend" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/3S4W-A0FlNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH pHyd Bending HH2O.</figcaption>
+                  </figure>
+                </div>
+                <!-- Stretching -->
+                <div class="tab-pane fade show" id="pills-GeOH-pHyd-HH2O-stret" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <figure class="figure">
+                    <iframe class="youtube-video" src="https://www.youtube.com/embed/pJM9meR4lGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <figcaption class="figure-caption">GeOH pHyd Stretching HH2O.</figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
