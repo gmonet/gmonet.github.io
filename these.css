@@ -25,11 +25,15 @@ h2 {
   border-bottom-right-radius: 10px;
 }
 .youtube-video {
-  width: 400px;
-  height: 400px;
+  width: 79vw;
+  height: 79vw;
+  max-width: 400px;
+  max-height: 400px;
   /* padding-top: 100%; */
 }
-
+.tab-content figure {
+  width: 100%;
+}
 .nav-item .nav-item {
   border-style: solid
 }
