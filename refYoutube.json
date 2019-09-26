@@ -1,0 +1,43 @@
+{
+    "pHyd":
+    {
+        "HH2O":
+        {
+            "trans":["jaranrk1YMw", "Translation", 8, 22, 2],
+            "lib":["ZH20JuEhths", "Libration", 55, 100, 2],
+            "bend":["3S4W-A0FlNI", "Bending", 196, 210, 5],
+            "stret":["pJM9meR4lGM", "Stretching", 400, 452, 5]
+        },
+        "Hin":
+        {
+            "twist":["RkIPiaJMYs4", "Twisting", 126, 151, 5],
+            "scis":["tu2GnEy1MTM", "Scissoring", 151, 166, 5],
+            "stret":["cIq8u2Z0cdQ", "Stretching", 245, 375, 5]
+        },
+        "Hout":
+        {
+            "bendA":["l8gU1JEqE1M", "Bending A", 114, 124, 5],
+            "bendB":["CZRCs37cXPw", "Bending B", 103, 110, 5],
+            "bendC":["DqoEcYmMkLg", "Bending C", 95, 102, 5],
+            "stretA":["5oBkUGO2ZH4", "Stretching A", 457, 461, 20],
+            "stretBC":["abAZHLEB9N0", "Stretching B & C", 465, 470, 20]
+        }
+    },
+    "dry":
+    {
+        "Hin":
+        {
+            "twist":["8HJitv4wDBg", "Twisting", 2, 52, 1],
+            "scis":["o8FljIst79I", "Scissoring", 120, 126, 5],
+            "stret":["w0gFGxQ6cFM", "Stretching", 457, 461, 20]
+        },
+        "Hout":
+        {
+            "bendA":["L5glCUrt42g", "Bending A", 114, 120, 5],
+            "bendB":["m6sinzeKwc8", "Bending B", 103, 111, 5],
+            "bendC":["BDKGDZ2ywn0", "Bending C", 90, 102, 5],
+            "stretA":["Exq1NgVvaPw", "Stretching A", 457, 461, 20],
+            "stretBC":["0DOgqdhQVZw", "Stretching B & C", 465, 470, 20]
+        }
+    }
+}

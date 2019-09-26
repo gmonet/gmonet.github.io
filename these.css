@@ -15,7 +15,7 @@ h2 {
   padding: 10px;
 }
 
-.chapter {
+.chapter  {
   border: solid 1px ;
   /* border-bottom: 1px solid #ccc; */
   padding-bottom: 0cm;
@@ -24,18 +24,44 @@ h2 {
   padding: 10px;
   border-bottom-right-radius: 10px;
 }
-.youtube-video {
+
+/* .youtube-video {
   width: 79vw;
   height: 79vw;
   max-width: 400px;
   max-height: 400px;
-  /* padding-top: 100%; */
-}
-.tab-content figure {
+
+} */
+.youtube-video {
   width: 100%;
+  height: 79vw;
+  max-height: 400px;
+}
+
+.figure {
+  width: 100%;
+  text-align: center;
+}
+.chapter .figure{
+  text-align: center;
+}
+#Chapitre-2{
+  text-align: center;
+}
+
+#Chapitre-2 .figure{
+  max-width: 500px;
+  
+}
+.bk-root {
+  text-align: -webkit-center;
 }
 .nav-item .nav-item {
   border-style: solid
+}
+
+#btn-filtrage *{
+  width: 100%;
 }
 
 /* Style the tab */
@@ -73,4 +99,34 @@ h2 {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+/* https://www.w3schools.com/howto/howto_css_button_on_image.asp */
+
+/* Container needed to position the button. Adjust the width as needed */
+.container-preview-figure {
+  position: relative;
+  width: 100%;
+  
+}
+
+/* Make the image responsive */
+.container-preview-figure img {
+  width: 100%;
+  height: auto;
+  border: ridge;
+  max-width: 10cm;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container-preview-figure .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container .btn:hover {
+  background-color: black;
 }

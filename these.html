@@ -29,33 +29,98 @@
 
     <!-- Chapitre 1 -->
     <h2 style="background-color: lightsalmon">Chapitre I - <small>Les nanotubes d’imogolite, après 60 ans d’investigation</small></h2>
-    <div id="Chapitre-1" class="chapter" style="border-color: lightsalmon;">
-      <iframe width="100%" height="400px" src="https://www.youtube.com/embed/aH6Mv2tW6w8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div id="Chapitre-1" class="chapter container-fluid" style="border-color: lightsalmon;">
+      <figure class="figure">
+        <div id="structureImogolite" class="container container-preview-figure">
+          <img class="figure-img img-fluid rounded" src="img/strucutureImogolite.png">
+          <button type="button" class="btn btn-primary" onclick="loadStuctureImogoliteVid()">
+            Lecture
+          </button>
+        </div>
+        <figcaption class="figure-caption" data-toggle="collapse" href="#collapseStructureImogolite">
+          Figure 5 - Structure atomique d'un nanotube d'imogolite.
+          <div class="collapse" id="collapseStructureImogolite">
+              Les atomes d'oxygène et d'hydrogène sont représentés par des sphères respectivement rouges et rosées.
+              Les tétraèdres oranges représentent les groupements SiO<sub>4</sub> alors que les octaèdres bleus correspondent aux groupements AlO<sub>6</sub>.
+          </div>
+        </figcaption>
+      </figure>
     </div>
     
     <!-- Chapitre 2 -->
     <h2 style="background-color: lightblue">Chapitre II - <small>Résolution de la structure des nanotubes d’imogolite</small></h2>
-    <div id="Chapitre-2" class="chapter" style="border-color: lightblue;">
-      
+    <div id="Chapitre-2" class="chapter container-fluid" style="border-color: lightblue;">
+      <figure class="figure">
+          <div id="drx3d-SiCH3" class="container container-preview-figure">
+            <img class="figure-img img-fluid rounded" src="img/drx3d_SiCH3.png">
+            <button type="button" class="btn btn-primary" onclick="loaddrx3dSiCH3()">
+              Afficher
+            </button>
+          </div>
+          <figcaption class="figure-caption" data-toggle="collapse" href="#collapse-drx3d-SiCH3">
+            Figure 28 - Visualisation de l'intensité diffusée dans l'espace réciproque pour un nanotube d'imogolite SiCH<sub>3</sub>.
+            <div class="collapse" id="collapse-drx3d-SiCH3">
+                Visualisation de l'intensité diffusée $I(\vec{Q})$ dans l'espace réciproque pour un nanotube d'imogolite SiCH<sub>3</sub> $(9,9)$  mettant en évidence son aspect tridimensionnel (a), en projetant sur le plan $(0, Q_y, Q_z)$ (b) et suivant les premiers plans diffusion (c).
+                L'échelle de couleur est proportionnelle à la racine carré de l'intensité diffusée.
+            </div>
+          </figcaption>
+      </figure>
+
+      <figure class="figure">
+          <div id="drx3d-SiCH3_z" class="container container-preview-figure">
+            <img class="figure-img img-fluid rounded" src="img/drx3d_SiCH3_z.png">
+            <button type="button" class="btn btn-primary" onclick="loaddrx3dSiCH3_z()">
+              Afficher
+            </button>
+          </div>
+          <figcaption class="figure-caption" data-toggle="collapse" href="#collapse-drx3d-SiCH3_z">
+            Figure 31 - Visualisation de l'intensité diffusée dans l'espace réciproque pour des nanotubes d'imogolite SiCH<sub>3</sub> avec des orientations quelconques autour de leurs axes longs.
+            <div class="collapse" id="collapse-drx3d-SiCH3_z">
+                Visualisation de l'intensité diffusée $I(\vec{Q})$ dans l'espace réciproque pour des nanotubes d'imogolite SiCH<sub>3</sub> $(9,9)$ avec des orientations quelconques autour de leurs axes longs, qui sont parallèles, en mettant en évidence l'aspect tridimensionnel de l'espace (a), pour $Q_x = \SI{0}{\angstrom^{-1}}$ (b) et dans les premiers plans de diffusion $Q_z = \frac{2\pi}{T} l$(c).
+                L'échelle de couleur est proportionnelle à la racine carrée de l'intensité diffusée.
+            </div>
+          </figcaption>
+      </figure>
+
+      <figure class="figure">
+          <div id="drx3d-SiCH3_xz" class="container container-preview-figure">
+            <img class="figure-img img-fluid rounded" src="img/drx3d_SiCH3_xz.png">
+            <button type="button" class="btn btn-primary" onclick="loaddrx3dSiCH3_xz()">
+              Afficher
+            </button>
+          </div>
+          <figcaption class="figure-caption" data-toggle="collapse" href="#collapse-drx3d-SiCH3_xz">
+            Figure 33 - Visualisation de l'intensité diffusée dans l'espace réciproque pour une poudre 2D de nanotubes d'imogolite SiCH<sub>3</sub>.
+            <div class="collapse" id="collapse-drx3d-SiCH3_xz">
+                Visualisation de l'intensité diffusée $I(\vec{Q})$ dans l'espace réciproque pour une poudre 2D de nanotubes d'imogolite SiCH<sub>3</sub> $(9,9)$ en mettant en évidence l'aspect tridimensionnel de l'espace (a), pour $Q_x = \SI{0}{\angstrom^{-1}}$ (b), pour $Q_z = \SI{0}{\angstrom^{-1}}$ (c) et pour $Q_y = \SI{0}{\angstrom^{-1}}$ (d).
+                L'échelle de couleur est proportionnelle à la racine carrée de l'intensité diffusée.
+            </div>
+          </figcaption>
+      </figure>
     </div>
+    
 
     <!-- Chapitre 3 -->
     <h2 style="background-color: orchid">Chapitre III - <small>Transformation en température des nanotubes d’imogolite</small></h2>
-    <div id="Chapitre-3" class="chapter" style="border-color: orchid;">
-      <!-- collapse XANES -->
-      <p>
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseXANES" aria-expanded="false" aria-controls="collapseXANES">
-          Figure intéractive XANES
-        </button>
-      </p>
-      <div class="collapse" id="collapseXANES">
-        <div class="card card-body">
-          <figure class="figure">
-            <script src="figures/XANES.js" id="80ea7d15-08bf-48de-bf0e-7771156f879f" async></script>
-            <figcaption class="figure-caption">Ge-CH3 twisting.</figcaption>
-          </figure>
+    <div id="Chapitre-3" class="chapter container-fluid" style="border-color: orchid;">
+      <figure class="figure">
+        <div id="XANES-deconvolution" class="container container-preview-figure">
+          <img class="figure-img img-fluid rounded" src="img/XANES_deconvolution.png">
+          <button type="button" class="btn btn-primary" onclick="loadXANESdeconvolution()">
+            Afficher
+          </button>
         </div>
-      </div>
+        <figcaption class="figure-caption" data-toggle="collapse" href="#collapse-dXANES-deconvolution">
+          Figure 89 - Déconvolution des spectres XANES.
+          <div class="collapse" id="collapse-dXANES-deconvolution">
+            (a) Ensemble des courbes XANES pour l'échantillon DW. 
+            (b) Illustration des différentes composantes pour l'ajustement des courbes XANES.
+            (c) Amplitudes des gaussiennes A, B et C issues de la déconvolution des spectres de l'échantillon \DW en fonction du temps (axe supérieur) et de la température (axe inférieur).
+            L'amplitude de ces composantes pour les trois échantillons de référence est illustrée par des segments de droite horizontale.
+            Le $\chi^2$ réduit (en gris) est donné en échelle logarithmique.
+          </div>
+        </figcaption>
+      </figure>
     </div>
 
     <!-- Chapitre 4 -->
@@ -94,307 +159,84 @@
         </div>
       </div>
 
-
       <h3>Filtrage GeOH</h3>
-      <!-- <div id="Chapitre-4_GeOH"> -->
-
-      <!-- Tabs for GeOH video -->
-      <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link" id="pills-GeOH-dry-tab" data-toggle="pill" href="#pills-GeOH-dry" role="tab" aria-controls="pills-GeOH-dry" aria-selected="False">Nanotube GeOH Sec (sec)</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" id="pills-GeOH-pHyd-tab" data-toggle="pill" href="#pills-GeOH-pHyd" role="tab" aria-controls="pills-GeOH-pHyd" aria-selected="false">Nanotube GeOH partiellement hydraté (pHyd)</a>
-        </li>
-      </ul>
-
-      <!-- Tab content for GeOH video -->
-      <div class="tab-content" id="pills-tabContent">
-        <!-- GeOH dry -->
-        <div class="tab-pane fade show" id="pills-GeOH-dry" role="tabpanel" aria-labelledby="pills-home-tab">
-          <!-- Tabs for GeOH dry -->
-          <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link" id="pills-GeOH-dry-Hout-tab" data-toggle="pill" href="#pills-GeOH-dry-Hout" role="tab" aria-controls="pills-GeOH-dry-Hout" aria-selected="False">Hout</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-GeOH-dry-Hin-tab" data-toggle="pill" href="#pills-GeOH-dry-Hin" role="tab" aria-controls="pills-GeOH-dry-Hin" aria-selected="False">Hin</a>
-            </li>
-          </ul>
-
-          <!-- Tab content for GeOH dry -->
-          <div class="tab-content" id="pills-tabContent">
-            <!-- GeOH dry Hout -->
-            <div class="tab-pane fade show" id="pills-GeOH-dry-Hout" role="tabpanel" aria-labelledby="pills-home-tab">
-              <!-- Tabs GeOH dry Hout -->
-              <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-dry-Hout-bendA-tab" data-toggle="pill" href="#pills-GeOH-dry-Hout-bendA" role="tab" aria-controls="pills-GeOH-dry-Hout-bendA" aria-selected="False">Bending A</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-dry-Hout-bendB-tab" data-toggle="pill" href="#pills-GeOH-dry-Hout-bendB" role="tab" aria-controls="pills-GeOH-dry-Hout-bendB" aria-selected="false">Bending B</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-dry-Hout-bendC-tab" data-toggle="pill" href="#pills-GeOH-dry-Hout-bendC" role="tab" aria-controls="pills-GeOH-dry-Hout-bendC" aria-selected="false">Bending C</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-dry-Hout-stretA-tab" data-toggle="pill" href="#pills-GeOH-dry-Hout-stretA" role="tab" aria-controls="pills-GeOH-dry-Hout-stretA" aria-selected="false">Stretching A</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-dry-Hout-stretBC-tab" data-toggle="pill" href="#pills-GeOH-dry-Hout-stretBC" role="tab" aria-controls="pills-GeOH-dry-Hout-stretBC" aria-selected="false">Stretching B et C</a>
-                </li>
-              </ul>
-              <!-- Tab content GeOH dry Hout -->
-              <div class="tab-content" id="pills-tabContent">
-                <!-- Bending A -->
-                <div class="tab-pane fade show" id="pills-GeOH-dry-Hout-bendA" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/L5glCUrt42g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH sec bending A.</figcaption>
-                  </figure>
-                </div>
-                <!-- Bending B -->
-                <div class="tab-pane fade show" id="pills-GeOH-dry-Hout-bendB" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/m6sinzeKwc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH sec bending B.</figcaption>
-                  </figure>
-                </div>
-                <!-- Bending C -->
-                <div class="tab-pane fade show" id="pills-GeOH-dry-Hout-bendC" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/BDKGDZ2ywn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH sec bending C.</figcaption>
-                  </figure>
-                </div>
-                <!-- Stretching A -->
-                <div class="tab-pane fade show" id="pills-GeOH-dry-Hout-stretA" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/Exq1NgVvaPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH sec stretching A.</figcaption>
-                  </figure>
-                </div>
-                <!-- Stretching B et C -->
-                <div class="tab-pane fade show" id="pills-GeOH-dry-Hout-stretBC" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/0DOgqdhQVZw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH sec stretching B et C.</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-
-            <!-- GeOH dry Hin -->
-            <div class="tab-pane fade show" id="pills-GeOH-dry-Hin" role="tabpanel" aria-labelledby="pills-home-tab">
-              <!-- Tabs GeOH dry Hin -->
-              <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-dry-Hin-twist-tab" data-toggle="pill" href="#pills-GeOH-dry-Hin-twist" role="tab" aria-controls="pills-GeOH-dry-Hin-twist" aria-selected="False">Twisting</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-dry-Hin-scisor-tab" data-toggle="pill" href="#pills-GeOH-dry-Hin-scisor" role="tab" aria-controls="pills-GeOH-dry-Hin-scisor" aria-selected="false">Scissoring</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-dry-Hin-stret-tab" data-toggle="pill" href="#pills-GeOH-dry-Hin-stret" role="tab" aria-controls="pills-GeOH-dry-Hin-stret" aria-selected="false">Stretching</a>
-                </li>
-              </ul>
-              <!-- Tab content GeOH dry Hin -->
-              <div class="tab-content" id="pills-tabContent">
-                <!-- Twisting -->
-                <div class="tab-pane fade show" id="pills-GeOH-dry-Hin-twist" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/8HJitv4wDBg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH sec Twisting Hin.</figcaption>
-                  </figure>
-                </div>
-                <!-- Scissoring -->
-                <div class="tab-pane fade show" id="pills-GeOH-dry-Hin-scisor" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/o8FljIst79I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH sec Scissoring Hin.</figcaption>
-                  </figure>
-                </div>
-                <!-- Stretching -->
-                <div class="tab-pane fade show" id="pills-GeOH-dry-Hin-stret" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/w0gFGxQ6cFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH sec Stretching Hin.</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div id="btn-filtrage" onchange="switchFilteringVideo()">
+        <div id='btn-group-state' class="btn-group btn-group-toggle" data-toggle="buttons"> 
+          <label class="btn btn-outline-success active">
+            <input type="radio" name="state" value='dry' autocomplete="off" checked=""> Sec
+          </label>
+          <label class="btn btn-outline-success">
+            <input type="radio" name="state" value='pHyd' autocomplete="off"> pHyd
+          </label>
+        </div>
+        
+        <div id='btn-group-H' class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-outline-primary active">
+            <input type="radio" name="selectH" value='Hout' autocomplete="off" checked> H<sub>out</sub>
+          </label>
+          <label class="btn btn-outline-primary">
+            <input type="radio" name="selectH" value='Hin' autocomplete="off"> H<sub>int</sub>
+          </label>
+          <label id="btn-HH2O" class="btn btn-outline-primary">
+            <input  type="radio" name="selectH" value='HH2O' autocomplete="off"> H<sub>H2O</sub>
+          </label>
         </div>
 
-        <!-- GeOH pHyd -->
-        <div class="tab-pane fade show" id="pills-GeOH-pHyd" role="tabpanel" aria-labelledby="pills-home-tab">
-          <!-- Tabs for GeOH pHyd -->
-          <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link" id="pills-GeOH-pHyd-Hout-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hout" role="tab" aria-controls="pills-GeOH-pHyd-Hout" aria-selected="False">Hout</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-GeOH-pHyd-Hin-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hin" role="tab" aria-controls="pills-GeOH-pHyd-Hin" aria-selected="False">Hin</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="pills-GeOH-pHyd-HH2O-tab" data-toggle="pill" href="#pills-GeOH-pHyd-HH2O" role="tab" aria-controls="pills-GeOH-pHyd-HH2O" aria-selected="False">HH2O</a>
-            </li>
-          </ul>
-          
-          <!-- Tab content for GeOH pHyd -->
-          <div class="tab-content" id="pills-tabContent">
-            <!-- GeOH pHyd Hout -->
-            <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hout" role="tabpanel" aria-labelledby="pills-home-tab">
-              <!-- Tabs GeOH pHyd Hout -->
-              <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-pHyd-Hout-bendA-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hout-bendA" role="tab" aria-controls="pills-GeOH-pHyd-Hout-bendA" aria-selected="False">Bending A</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-pHyd-Hout-bendB-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hout-bendB" role="tab" aria-controls="pills-GeOH-pHyd-Hout-bendB" aria-selected="false">Bending B</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-pHyd-Hout-bendC-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hout-bendC" role="tab" aria-controls="pills-GeOH-pHyd-Hout-bendC" aria-selected="false">Bending C</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-pHyd-Hout-stretA-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hout-stretA" role="tab" aria-controls="pills-GeOH-pHyd-Hout-stretA" aria-selected="false">Stretching A</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-pHyd-Hout-stretBC-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hout-stretBC" role="tab" aria-controls="pills-GeOH-pHyd-Hout-stretBC" aria-selected="false">Stretching B et C</a>
-                </li>
-              </ul>
-              <!-- Tab content GeOH pHyd Hout -->
-              <div class="tab-content" id="pills-tabContent">
-                <!-- Bending A -->
-                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hout-bendA" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/l8gU1JEqE1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH pHyd bending A.</figcaption>
-                  </figure>
-                </div>
-                <!-- Bending B -->
-                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hout-bendB" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/CZRCs37cXPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH pHyd bending B.</figcaption>
-                  </figure>
-                </div>
-                <!-- Bending C -->
-                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hout-bendC" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/DqoEcYmMkLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH pHyd bending C.</figcaption>
-                  </figure>
-                </div>
-                <!-- Stretching A -->
-                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hout-stretA" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/5oBkUGO2ZH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH pHyd stretching A.</figcaption>
-                  </figure>
-                </div>
-                <!-- Stretching B et C -->
-                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hout-stretBC" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/abAZHLEB9N0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH sec stretching B et C.</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
+        <!-- Hout -->
+        <div id='btn-group-Hout' class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-outline-secondary active">
+            <input type="radio" name="select-vib-Hout" autocomplete="off" value='stretA' checked> Stret. A
+          </label>
+          <label class="btn btn-outline-secondary">
+            <input type="radio" name="select-vib-Hout" autocomplete="off" value='stretBC'> Stret. B et C
+          </label>
+          <label class="btn btn-outline-secondary">
+            <input type="radio" name="select-vib-Hout" autocomplete="off" value='bendA'> Bend. A
+          </label>
+          <label class="btn btn-outline-secondary">
+            <input type="radio" name="select-vib-Hout" autocomplete="off" value='bendB'> Bend. B
+          </label>
+          <label class="btn btn-outline-secondary">
+            <input type="radio" name="select-vib-Hout" autocomplete="off" value='bendC'> Bend. C
+          </label>
+        </div>
 
-            <!-- GeOH pHyd Hin -->
-            <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hin" role="tabpanel" aria-labelledby="pills-home-tab">
-              <!-- Tabs GeOH pHyd Hin -->
-              <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-pHyd-Hin-twist-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hin-twist" role="tab" aria-controls="pills-GeOH-pHyd-Hin-twist" aria-selected="False">Twisting</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-pHyd-Hin-scisor-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hin-scisor" role="tab" aria-controls="pills-GeOH-pHyd-Hin-scisor" aria-selected="false">Scissoring</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-pHyd-Hin-stret-tab" data-toggle="pill" href="#pills-GeOH-pHyd-Hin-stret" role="tab" aria-controls="pills-GeOH-pHyd-Hin-stret" aria-selected="false">Stretching</a>
-                </li>
-              </ul>
-              <!-- Tab content GeOH pHyd Hin -->
-              <div class="tab-content" id="pills-tabContent">
-                <!-- Twisting -->
-                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hin-twist" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/RkIPiaJMYs4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH pHyd Twisting Hin.</figcaption>
-                  </figure>
-                </div>
-                <!-- Scissoring -->
-                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hin-scisor" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/tu2GnEy1MTM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH sec Scissoring Hin.</figcaption>
-                  </figure>
-                </div>
-                <!-- Stretching -->
-                <div class="tab-pane fade show" id="pills-GeOH-pHyd-Hin-stret" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/cIq8u2Z0cdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH sec Stretching Hin.</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
+        <!-- Hin -->
+        <div id='btn-group-Hin' class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-outline-secondary active">
+            <input type="radio" name="select-vib-Hin" autocomplete="off" value='twist' checked> Twist.
+          </label>
+          <label class="btn btn-outline-secondary">
+            <input type="radio" name="select-vib-Hin" autocomplete="off" value='scis'> Scis.
+          </label>
+          <label class="btn btn-outline-secondary">
+            <input type="radio" name="select-vib-Hin" autocomplete="off" value='stret' checked> Stret
+          </label>
+        </div>
 
-            <!-- GeOH pHyd HH2O -->
-            <div class="tab-pane fade show" id="pills-GeOH-pHyd-HH2O" role="tabpanel" aria-labelledby="pills-home-tab">
-              <!-- Tabs GeOH pHyd HH2O -->
-              <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-pHyd-HH2O-trans-tab" data-toggle="pill" href="#pills-GeOH-pHyd-HH2O-trans" role="tab" aria-controls="pills-GeOH-pHyd-HH2O-trans" aria-selected="False">Translation</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-pHyd-HH2O-lib-tab" data-toggle="pill" href="#pills-GeOH-pHyd-HH2O-lib" role="tab" aria-controls="pills-GeOH-pHyd-HH2O-lib" aria-selected="false">Libration</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-pHyd-HH2O-bend-tab" data-toggle="pill" href="#pills-GeOH-pHyd-HH2O-bend" role="tab" aria-controls="pills-GeOH-pHyd-HH2O-bend" aria-selected="false">Bending</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="pills-GeOH-pHyd-HH2O-stret-tab" data-toggle="pill" href="#pills-GeOH-pHyd-HH2O-stret" role="tab" aria-controls="pills-GeOH-pHyd-HH2O-stret" aria-selected="false">Stretching</a>
-                </li>
-              </ul>
-              <!-- Tab content GeOH pHyd HH2O -->
-              <div class="tab-content" id="pills-tabContent">
-                <!-- Translation -->
-                <div class="tab-pane fade show" id="pills-GeOH-pHyd-HH2O-trans" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/jaranrk1YMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH pHyd Translation HH2O.</figcaption>
-                  </figure>
-                </div>
-                <!-- Libration -->
-                <div class="tab-pane fade show" id="pills-GeOH-pHyd-HH2O-lib" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/ZH20JuEhths" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH pHyd Libration HH2O.</figcaption>
-                  </figure>
-                </div>
-                <!-- Bending -->
-                <div class="tab-pane fade show" id="pills-GeOH-pHyd-HH2O-bend" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/3S4W-A0FlNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH pHyd Bending HH2O.</figcaption>
-                  </figure>
-                </div>
-                <!-- Stretching -->
-                <div class="tab-pane fade show" id="pills-GeOH-pHyd-HH2O-stret" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <figure class="figure">
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/pJM9meR4lGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <figcaption class="figure-caption">GeOH pHyd Stretching HH2O.</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- HH2O -->
+        <div id='btn-group-HH2O' class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-outline-secondary active">
+            <input type="radio" name="select-vib-HH2O" autocomplete="off" value='trans' checked> Trans.
+          </label>
+          <label class="btn btn-outline-secondary">
+            <input type="radio" name="select-vib-HH2O" autocomplete="off" value='lib'> Lib.
+          </label>
+          <label class="btn btn-outline-secondary">
+            <input type="radio" name="select-vib-HH2O" autocomplete="off" value='bend'> Bend.
+          </label>
+          <label class="btn btn-outline-secondary">
+            <input type="radio" name="select-vib-HH2O" autocomplete="off" value='stret'> Stret.
+          </label>
         </div>
       </div>
+      <figure class="figure">
+        <div id="ytplayer_filtrage"></div>
+        <figcaption id="figcaption-GeOH" class="figure-caption">Sec Hout Stretching A.</figcaption>
+      </figure>
+
+      
+
     </div>
   </div>
 
@@ -405,5 +247,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://www.youtube.com/player_api"></script>
+  <script src="https://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.js"></script>
+  <script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.1.0.min.js"></script>
+  <script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-1.1.0.min.js"></script>
+  <script src="scripts/main.js"></script>
+
+  <script src="scripts/bokeh.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>
