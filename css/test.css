@@ -20,18 +20,13 @@ button:hover{
  color: black;
 }
 
-
 .container{
  display: flex;
 }
 
-/* .container > * {
- flex: 0 0 auto;
-} */
-
 nav{
- flex: 0 0 auto;
- width: 4cm;
+ flex: 0 0 2cm;
+ /* width: 4cm; */
  height: 100vh;
  background-color: darkcyan;
  position: sticky;
