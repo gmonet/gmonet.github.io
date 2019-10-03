@@ -1,5 +1,8 @@
 {
     "files.autoSaveDelay": 4000,
     "editor.wordWrap": "on",
-    "editor.tabSize": 1
+    "editor.tabSize": 1,
+    "cSpell.words": [
+        "Loisirs"
+    ]
 }

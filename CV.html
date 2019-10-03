@@ -15,12 +15,7 @@
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 	<!-- Font Awesome JS -->
-	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
-		integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-		crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-		integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-		crossorigin="anonymous"></script>
+	<script defer src="https://kit.fontawesome.com/7d1ee8f02a.js" crossorigin="anonymous"></script>
 
 
 </head>
@@ -31,49 +26,59 @@
 		<!-- Sidebar -->
 		<!-- https://bootstrapious.com/p/bootstrap-sidebar -->
 		<nav id="sidebar">
-			<div class="sidebar-header">
-				<h3>Bootstrap Sidebar</h3>
+			<div class="sidebar-photo">
+					<img src="https://i1.rgstatic.net/ii/profile.image/682625744252928-1539762068019_Q128/Geoffrey_Monet.jpg" alt="Geoffrey Monet" class="nova-e-avatar__img">
 			</div>
-
+			<div class="sidebar-header d-flex justify-content-center">
+					<a href="https://www.linkedin.com/in/gmonet" target="_blank" ><i class="fab fa-linkedin"></i></a>
+					<a href="https://www.researchgate.net/profile/Geoffrey_Monet" target="_blank"><i class="fab fa-researchgate"></i></a>
+					<!-- <a href="https://www.facebook.com/geoffrey.monet.9" target="_blank"><i class="fab fa-facebook"></i></a> -->
+					<a href="https://twitter.com/GeoffreyMonet"><i class="fab fa-twitter" target="_blank"></i></a>
+					<a href="https://github.com/gmonet" target="_blank"><i class="fab fa-github"></i></a>
+					<a href="mailto:geoffrey.monet@u-psud.fr"><i class="fas fa-at"></i></a>
+			</div>
 			<ul class="list-unstyled components">
-				<p>Dummy Heading</p>
-				<li class="active">
-					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-					<ul class="collapse list-unstyled" id="homeSubmenu">
-						<li>
-							<a href="#">Home 1</a>
-						</li>
-						<li>
-							<a href="#">Home 2</a>
-						</li>
-						<li>
-							<a href="#">Home 3</a>
-						</li>
-					</ul>
+				<li>
+					<a href="#formations">
+							<div class="icon"><i class="fas fa-atom fa"></i></div>
+							<div class="text-icon">Formations</div>
+						</a>
 				</li>
 				<li>
-					<a href="#">About</a>
+					<a href="#experiences">
+						<div class="icon"><i class="fas fa-briefcase fa"></i></div>
+						<div class="text-icon">Expériences</div>
+					</a>
 				</li>
 				<li>
-					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
-						class="dropdown-toggle">Pages</a>
-					<ul class="collapse list-unstyled" id="pageSubmenu">
-						<li>
-							<a href="#">Page 1</a>
-						</li>
-						<li>
-							<a href="#">Page 2</a>
-						</li>
-						<li>
-							<a href="#">Page 3</a>
-						</li>
-					</ul>
+					<a href="#competences">
+						<div class="icon"><i class="fas fa-book fa"></i></div>
+						<div class="text-icon">Compétences</div>
+					</a>
 				</li>
 				<li>
-					<a href="#">Portfolio</a>
+					<a href="#publications">
+							<div class="icon"><i class="fas fa-file-alt fa"></i></div>
+							<div class="text-icon">Publications</div>
+						</a>
 				</li>
 				<li>
-					<a href="#">Contact</a>
+					<a href="#conferences">
+						<div class="icon"><i class="fas fa-comment fa"></i></div>
+						<div class="text-icon">Conférences</div>
+					</a>
+				</li>
+				<li>
+					<a href="#langues">
+						<div class="icon"><i class="fas fa-globe-europe fa"></i></div>
+						<div class="text-icon">Langues</div>
+					</a>
+				</li>
+				<li>
+					<a href="#hobbies">
+						<div class="icon"><i class="fas fa-swimmer fa"></i></div>
+						<div class="text-icon">Centres d'intérêt</div>
+					</a>
 				</li>
 			</ul>
 
@@ -82,10 +87,15 @@
 		<div id="content">
 			<!-- Top Nav Bar -->
 			<nav id="top-navbar" class="navbar navbar-expand-lg navbar-dark bg-light ">
-				<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-					<i class="fas fa-address-book fa-2x"></i>
-					<!-- <span>Toggle Sidebar</span> -->
-				</button>
+					<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+							<i class="fas fa-address-book fa-2x"></i>
+							<!-- <span>Toggle Sidebar</span> -->
+						</button>
+					<div id="name-top-navbar" class="container">
+						<h2>
+							Geoffrey Monet
+						</h2>
+					</div>
 			</nav>
 
 			<!-- Main content -->
@@ -187,17 +197,17 @@
 				<div id="competences" class="container">
 					<h1> Compétences </h1>
 					<div>
-						<h2> Scientifiques et technologiques transverses </h1>
+						<h4> Scientifiques et technologiques transverses </h1>
 							<p>Rédaction scientifique, veille scientifique, communication écrite et orale, enseignement.
 							</p>
 					</div>
 					<div>
-						<h2> Scientifiques expérimentales </h1>
+						<h4> Scientifiques expérimentales </h1>
 							<p>Diffusion des rayons X, diffusion inélastique de neutrons, spectroscopie d’absorption X,
 								spectroscopie infrarouge, spectroscopie RMN, spectroscopie Raman.</p>
 					</div>
 					<div>
-						<h2> Numériques </h1>
+						<h4> Numériques </h1>
 							<p>Python, C/C++, Matlab, Maple, Git, Linux, Adobe Illustrator, Adobe Premier Pro, Office,
 								LaTeX, Zotero, Qt, Blender, Unreal Engine 4, HTML/CSS, JavaScript</p>
 					</div>
@@ -271,17 +281,19 @@
 					</ul>
 				</div>
 
+				<!-- Langues -->
+				<div id="langues" class="container">
+					<h1> Langues </h1>
+					<p>Français et Anglais</p>
+				</div>
+
 				<!-- Centres d'intérêt -->
 				<div id="hobbies" class="container">
 					<h1> Centres d'intérêt </h1>
 					<p>Natation et activités nautiques, Aïkido, Informatique</p>
 				</div>
 
-				<!-- Langues -->
-				<div id="langues" class="container">
-					<h1> Langues </h1>
-					<p>Français et Anglais</p>
-				</div>
+				
 			</main>
 		</div>
 	</div>
@@ -309,7 +321,7 @@
 			});
 
 			$('#sidebarCollapse').on('click', function () {
-				$('#sidebar, #content').toggleClass('active');
+				$('#sidebar, #content, #name-top-navbar').toggleClass('active');
 				$('.collapse.in').toggleClass('in');
 				$('a[aria-expanded=true]').attr('aria-expanded', 'false');
 			});
