@@ -25,6 +25,8 @@
 	<div class="wrapper">
 		<!-- Sidebar -->
 		<!-- https://bootstrapious.com/p/bootstrap-sidebar -->
+		<!-- Improve sidebar behaviour on mobile -->
+		<!-- https://www.w3schools.com/howto/howto_js_collapse_sidebar.asp -->
 		<nav id="sidebar">
 			<div class="sidebar-photo">
 					<img src="https://i1.rgstatic.net/ii/profile.image/682625744252928-1539762068019_Q128/Geoffrey_Monet.jpg" alt="Geoffrey Monet" class="nova-e-avatar__img">
@@ -90,11 +92,18 @@
 					<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
 							<i class="fas fa-address-book fa-2x"></i>
 							<!-- <span>Toggle Sidebar</span> -->
-						</button>
-					<div id="name-top-navbar" class="container">
+					</button>
+					<div id="name-top-navbar" class="container-fluid" style="justify-content: center">
 						<h2>
 							Geoffrey Monet
 						</h2>
+					</div>
+					<div class="container">
+							<a href="./CV_MONET.pdf" target="_blank">
+							<button class="btn btn-info navbar-btn">
+									<i class="fa fa-download"></i>
+									Télecharger en pdf
+							</button></a>
 					</div>
 			</nav>
 
