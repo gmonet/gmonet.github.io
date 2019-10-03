@@ -1,0 +1,44 @@
+html{
+ font-family: sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+ margin:0;
+ width: 100%;
+}
+
+button, button:focus{
+ font: inherit;
+ background: transparent;
+ border: none;
+ color: white;
+ outline: none;
+}
+
+button:hover{
+ background: white;
+ color: black;
+}
+
+
+.container{
+ display: flex;
+}
+
+/* .container > * {
+ flex: 0 0 auto;
+} */
+
+nav{
+ flex: 0 0 auto;
+ width: 4cm;
+ height: 100vh;
+ background-color: darkcyan;
+ position: sticky;
+ top: 0;
+}
+
+nav .container{
+ flex-direction: column;
+}
+
