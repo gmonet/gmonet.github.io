@@ -1,28 +1,134 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <title>The HTML5 Herald</title>
- <meta name="description" content="The HTML5 Herald">
- <meta name="author" content="SitePoint">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
 
- <link rel="stylesheet" href="css/test.css">
+  <link rel="stylesheet" href="css/test.css">
 
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <!-- Font Awesome JS -->
+  <script defer src="https://kit.fontawesome.com/7d1ee8f02a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
- <div class="container">
-  <nav>
-    <div class="container">
-     <button>1</button>
-     <button>2</button>
-     <button>3</button>
-     <button>4</button>
-    </div>
-  </nav>
-  <main>This is useful for emulating native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it should be used with care, especially with pages used by a lot of different people.This is useful for emulating native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it should be used with care, especially with pages used by a lot of different people.This is useful for emulating native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it should be used with care, especially with pages used by a lot of different people.This is useful for emulating native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it should be used with care, especially with pages used by a lot of different people.This is useful for emulating native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it should be used with care, especially with pages used by a lot of different people.This is useful for emulating native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it should be used with care, especially with pages used by a lot of different people.This is useful for emulating native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it should be used with care, especially with pages used by a lot of different people.This is useful for emulating native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it should be used with care, especially with pages used by a lot of different people.This is useful for emulating native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it should be used with care, especially with pages used by a lot of different people.This is useful for emulating native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it should be used with care, especially with pages used by a lot of different people.This is useful for emulating native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it should be used with care, especially with pages used by a lot of different people.</main>
- </div>
-  <!-- <script src="js/scripts.js"></script> -->
+  <div class="container">
+    <nav id="nav-side">
+      <div class="container">
+        <ul class="list-unstyled components">
+          <li>
+            <a href="#formations">
+              <div class="icon"><i class="fas fa-atom fa"></i></div>
+              <div class="text-icon">Formations</div>
+            </a>
+          </li>
+          <li>
+            <a href="#experiences">
+              <div class="icon"><i class="fas fa-briefcase fa"></i></div>
+              <div class="text-icon">Expériences</div>
+            </a>
+          </li>
+          <li>
+            <a href="#competences">
+              <div class="icon"><i class="fas fa-book fa"></i></div>
+              <div class="text-icon">Compétences</div>
+            </a>
+          </li>
+          <li>
+            <a href="#publications">
+              <div class="icon"><i class="fas fa-file-alt fa"></i></div>
+              <div class="text-icon">Publications</div>
+            </a>
+          </li>
+          <li>
+            <a href="#conferences">
+              <div class="icon"><i class="fas fa-comment fa"></i></div>
+              <div class="text-icon">Conférences</div>
+            </a>
+          </li>
+          <li>
+            <a href="#langues">
+              <div class="icon"><i class="fas fa-globe-europe fa"></i></div>
+              <div class="text-icon">Langues</div>
+            </a>
+          </li>
+          <li>
+            <a href="#hobbies">
+              <div class="icon"><i class="fas fa-swimmer fa"></i></div>
+              <div class="text-icon">Centres d'intérêt</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <nav id="nav-top">
+        <button id="btn-collapse-side-nav">1</button>
+        <p>2</p>
+        <p>3</p>
+      </nav>
+      This is useful for emulating native OS behavior when combined with some JS for onClick. For example, accessibility
+      aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus
+      rects may not even be used with certain text fields, which is up to the developer. Though I agree it should be
+      used with care, especially with pages used by a lot of different people.This is useful for emulating native OS
+      behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight
+      popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used with
+      certain text fields, which is up to the developer. Though I agree it should be used with care, especially with
+      pages used by a lot of different people.This is useful for emulating native OS behavior when combined with some JS
+      for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click
+      them. And depending on the app, focus rects may not even be used with certain text fields, which is up to the
+      developer. Though I agree it should be used with care, especially with pages used by a lot of different
+      people.This is useful for emulating native OS behavior when combined with some JS for onClick. For example,
+      accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the
+      app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it
+      should be used with care, especially with pages used by a lot of different people.This is useful for emulating
+      native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't
+      highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used
+      with certain text fields, which is up to the developer. Though I agree it should be used with care, especially
+      with pages used by a lot of different people.This is useful for emulating native OS behavior when combined with
+      some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you
+      click them. And depending on the app, focus rects may not even be used with certain text fields, which is up to
+      the developer. Though I agree it should be used with care, especially with pages used by a lot of different
+      people.This is useful for emulating native OS behavior when combined with some JS for onClick. For example,
+      accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And depending on the
+      app, focus rects may not even be used with certain text fields, which is up to the developer. Though I agree it
+      should be used with care, especially with pages used by a lot of different people.This is useful for emulating
+      native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't
+      highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not even be used
+      with certain text fields, which is up to the developer. Though I agree it should be used with care, especially
+      with pages used by a lot of different people.This is useful for emulating native OS behavior when combined with
+      some JS for onClick.
+      <br>
+      For example, accessibility aside, Mac OS X doesn't highlight popup menus in blue whenever you click them. And
+      depending on the app, focus rects may not even be used with certain text fields, which is up to the developer.
+      Though I agree it should be used with care, especially with pages used by a lot of different people.This is useful
+      for emulating native OS behavior when combined with some JS for onClick. For example, accessibility aside, Mac OS
+      X doesn't highlight popup menus in blue whenever you click them. And depending on the app, focus rects may not
+      even be used with certain text fields, which is up to the developer. Though I agree it should be used with care,
+      especially with pages used by a lot of different people.This is useful for emulating native OS behavior when
+      combined with some JS for onClick. For example, accessibility aside, Mac OS X doesn't highlight popup menus in
+      blue whenever you click them. And depending on the app, focus rects may not even be used with certain text fields,
+      which is up to the developer. Though I agree it should be used with care, especially with pages used by a lot of
+      different people.
+    </main>
+  </div>
+  <script type="text/javascript">
+    $('#btn-collapse-side-nav').on('click', function () {
+      console.log('Hi')
+      $('#nav-side, #btn-collapse-side-nav').toggleClass('active');
+      // $('.collapse.in').toggleClass('in');
+      // $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
+  </script>
 </body>
+
 </html>

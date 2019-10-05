@@ -7,7 +7,98 @@ body{
  width: 100%;
 }
 
+.container{
+ display: flex;
+}
+
 button, button:focus{
+ font: inherit;
+ background: transparent;
+ border: none;
+ color: inherit;
+ outline: none;
+}
+
+/* ---------------
+     Navigation
+   ---------------*/
+
+nav{
+ transition: all 0.3s;
+}
+/* Nav Side */
+#nav-side{
+ flex: none;
+ width: 4cm;
+ height: 100vh;
+ background-color: darkcyan;
+ position: sticky;
+ top: 0;
+}
+
+#nav-side.active{
+ margin-left: -4cm;
+}
+
+#nav-side .container{
+ flex-direction: column;
+}
+
+#nav-side ul{
+ list-style: none;
+ padding: 0;
+}
+
+#nav-side li{
+ padding: 10px 5px;
+ border: none;
+ color: white;
+}
+
+#nav-side li:hover{
+ background: white;
+ color: black;
+}
+
+#nav-side a{
+ display: flex;
+ align-items: center;
+
+ color: inherit;
+ font: inherit;
+ text-decoration: none;
+ outline: none;
+}
+
+#nav-side .icon{
+font-size: 2em;
+flex: 0 0 1cm;
+}
+
+/* Nav Top */
+#nav-top{
+ background-color: #f8f9fa;
+ padding: 15px 10px;
+ box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+ display: flex;
+ justify-content: space-between;
+}
+
+#btn-collapse-side-nav, #btn-collapse-side-nav:focus{
+ z-index: 9999;
+ border-radius: 4px;
+ color: #fff;
+ background-color: #7386D5;
+ border-color: #7386D5;
+ box-shadow: 0 0 0 0.2rem rgb(82, 96, 155);
+}
+#btn-collapse-side-nav:hover, #btn-collapse-side-nav:active  {
+ color: #7386D5;
+ background-color: #fff;
+ border-color: #7386D5;
+ box-shadow: 0 0 0 0.2rem rgb(82, 96, 155);
+}
+/* button, button:focus{
  font: inherit;
  background: transparent;
  border: none;
@@ -18,22 +109,21 @@ button, button:focus{
 button:hover{
  background: white;
  color: black;
-}
+} */
 
-.container{
- display: flex;
-}
+@media (max-width: 768px) {
+ #nav-side{
+  width: 100%;
+  margin-left: -100%;
+  position: fixed;
+ }
 
-nav{
- flex: 0 0 2cm;
- /* width: 4cm; */
- height: 100vh;
- background-color: darkcyan;
- position: sticky;
- top: 0;
+ #nav-side.active{
+  margin-left: 0;
+ }
+ #btn-collapse-side-nav.active{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+ }
 }
-
-nav .container{
- flex-direction: column;
-}
-
