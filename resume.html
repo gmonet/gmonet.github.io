@@ -1,505 +1,306 @@
-<!doctype html>
-<html>
-	<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Geoffrey Monet</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
-	<style type="text/css">
-	@import url(
-	https://fonts.googleapis.com/css?family=Lato:400,700
-);
-body {
-	background: #fff;
-	font-family: Lato, sans-serif;
-	margin: 0 0 80px;
-}
-a {
-	color: #2ecc71;
-}
-a:focus,
-a:hover {
-	color: #f1c40f;
-	text-decoration: none;
-}
-p {
-	line-height: 1.5;
-	margin: 0;
-}
-p + p {
-	margin-top: 10px;
-}
-h1,
-h2,
-h3,
-h4 {
-	margin-top: 0
-}
-section {
-	margin-top: 30px;
-}
-li {
-	line-height: 1.8;
-	list-style: none;
-}
-li:before {
-	content: "\f052";
-	float: left;
-	font: 13px Octicons;
-	margin-top: 6px;
-	margin-left: -20px;
-	opacity: .1;
-	position: absolute;
-}
-blockquote {
-	border-left: 5px solid #e7e9ec;
-	font-size: 14px;
-}
-em {
-	color: #95a5a6;
-	font-weight: normal;
-	font-style: normal;
-}
-h4 span:first-child {
-	color: #000;
-	font-weight: bold;
-}
-.container {
-	max-width: 750px;
-	padding: 0 30px;
-}
-.col-sm-6 {
-	margin-bottom: 10px;
-}
-.col-sm-12 h4 {
-	margin-top: 12px; 
-}
-.col-sm-12 + .col-sm-12 {
-	margin-top: 30px;
-}
-#header {
-	background: #f4f6f6;
-	padding: 50px 0;
-	margin-bottom: 30px;
-}
-#header h2 {
-	color: #95a5a6;
-	font-size: 24px;
-}
-#content h3 {
-	color: #f1c40f;
-	font-size: 26px;
-	margin-top: -4px;
-}
-#content aside {
-	text-align: right;
-	padding-right: 30px;
-}
-#profiles .network {
-	text-transform: capitalize;
-}
-#work .position,
-#volunteer .position {
-	font-weight: bold;
-	margin-bottom: 8px;
-}
-#education .area {
-	font-weight: bold;
-}
-#education .area:before {
-	content: "\f0d7";
-	font: 16px Octicons;
-	margin-right: 6px;
-}
-#education .studyType {
-	margin-left: 25px;
-}
-#awards .summary,
-#publications .summary {
-	margin-top: 8px;
-}
-#publications .website a:before {
-	content: attr(href);
-}
+<!DOCTYPE html>
+<html lang="en">
 
-@media (min-width: 480px) {
-	.strike-through {
-		border-top: 1px solid #f4f6f6;
-		height: 20px;
-		margin-top: 12px;
-		margin-bottom: -2px;
-		position: relative;
-	}
-	.strike-through span,
-	.strike-through a {
-		background: #fff;
-		position: absolute;
-	}
-	.strike-through span:first-child {
-		padding-right: 20px;
-		margin-top: -12px;
-	}
-	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
-		padding-left: 20px;
-		right: 0;
-	}
-}
-@media (max-width: 768px) {
-	.col-sm-6:last-child {
-		margin-bottom: 0px;
-	}
-	#content aside {
-		margin-bottom: 20px;
-		padding-right: 0;
-		text-align: left;
-	}
-	#publications .website a:before {
-		content: "View publication";
-	}
-}
-@media (max-width: 480px) {
-	h1 {
-		font-size: 26px;
-	}
-	.date {
-		font-size: 14px;
-		margin-bottom: 5px;
-	}
-	.strike-through span:first-child {
-		margin-bottom: 7px;
-	}
-	.strike-through span {
-		display: block;
-	}	
-	#header {
-		margin-bottom: 10px;
-		padding: 40px 0;
-	}
-	#actions {
-		display: none;
-	}
-}
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <title>CV Geoffrey Monet</title>
+ <meta name="description" content="Resume Geoffrey Monet">
+ <meta name="author" content="Geoffrey Monet">
 
-	</style>
-	
-	</head>
-	<body>
-	
-	<header id="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-9 col-sm-push-3">
-					<h1>
-						Geoffrey Monet
-					</h1>
-					<h2>
-						Programmer
-					</h2>
-				</div>
-			</div>
-		</div>
-	</header>
-	<div id="content" class="container">
+ <link rel="stylesheet" href="css/CV.css">
 
-	<section id="contact" class="row">
-		<aside class="col-sm-3">
-			<h3>Contact</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">geoffrey.monet@u-psud.fr</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone">(912) 555-4321</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Website</strong>
-				<div class="website">
-					<a href="http://richardhendricks.com">http://richardhendricks.com</a>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	<section id="about" class="row">
-		<aside class="col-sm-3">
-			<h3>About</h3>
-		</aside>
-		<div class="col-sm-9">
-			<p>Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!</p>
-		</div>
-	</section>
-	<section id="profiles" class="row">
-		<aside class="col-sm-3">
-			<h3>Profiles</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-				<div class="col-sm-6">
-					<strong class="network">
-						Twitter
-					</strong>
-					<div class="username">
-							neutralthoughts
-					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						SoundCloud
-					</strong>
-					<div class="username">
-						<div class="url">
-							<a href="https://soundcloud.com/dandymusicnl">dandymusicnl</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+ <!-- jQuery CDN - Slim version (=without AJAX) -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-	<section id="work" class="row">
-		<aside class="col-sm-3">
-			<h3>Work</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Pied Piper</span>
-					<span class="date">
-						2013-12-01 — 2014-12-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://piedpiper.com">http://piedpiper.com</a>
-				</div>
-				<div class="position">
-					CEO/President
-				</div>
-				<div class="summary">
-					<p>Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Build an algorithm for artist to detect if their music was violating copy right infringement laws</li>
-					<li class="bullet">Successfully won Techcrunch Disrupt</li>
-					<li class="bullet">Optimized an algorithm that holds the current world record for Weisman Scores</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+ <!-- Font Awesome JS -->
+ <script defer src="https://kit.fontawesome.com/7d1ee8f02a.js" crossorigin="anonymous"></script>
+</head>
 
-	<section id="volunteer" class="row">
-		<aside class="col-sm-3">
-			<h3>Volunteer</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>CoderDojo</span>
-					<span class="date">
-						2012-01-01 — 2013-01-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://coderdojo.com/">http://coderdojo.com/</a>
-				</div>
-				<div class="position">
-					Teacher
-				</div>
-				<div class="summary">
-					<p>Global movement of free coding clubs for young people.</p>
-				</div>
-				<h4>Highlights</h4>
-				<ul class="highlights">
-					<li class="bullet">Awarded &#x27;Teacher of the Month&#x27;</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="education" class="row">
-		<aside class="col-sm-3">
-			<h3>Education</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>University of Oklahoma</span>
-					<span class="date">
-						2011-06-01 — 2014-01-01
-					</span>
-				</h4>
-				<div class="area">
-					Information Technology
-				</div>
-				<div class="studyType">
-					Bachelor
-				</div>
-				<h4>Courses</h4>
-				<ul class="courses">
-					<li>DB1101 - Basic SQL</li>
-					<li>CS2011 - Java Introduction</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="awards" class="row">
-		<aside class="col-sm-3">
-			<h3>Awards</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Digital Compression Pioneer Award</span>
-				</h4>
-				<div class="date pull-right">
-					<em>Awarded</em>
-					2014-11-01
-				</div>
-				<div class="awarder">
-					<em>by</em>
-					<strong>Techcrunch</strong>
-				</div>
-				<div class="summary">
-					There is no spoon.
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="publications" class="row">
-		<aside class="col-sm-3">
-			<h3>Publications</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<h4 class="strike-through">
-					<span>Video compression for 3d media</span>
-					<span class="date">
-						2014-10-01
-					</span>
-				</h4>
-				<div class="website pull-right">
-					<a href="http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"></a>
-				</div>
-				<div class="publisher">
-					<em>Published by</em>
-					<strong>Hooli</strong>
-				</div>
-				<div class="summary">
-					<p>Innovative middle-out compression algorithm that changes the way we store data.</p>
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="skills" class="row">
-		<aside class="col-sm-3">
-			<h3>Skills</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Web Development</h4>
-				</div>
-				<ul class="keywords">
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>Javascript</li>
-				</ul>
-			</div>
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Compression</h4>
-				</div>
-				<ul class="keywords">
-					<li>Mpeg</li>
-					<li>MP4</li>
-					<li>GIF</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
+<body>
+ <div class="container">
+  <!-- Navigation Side bar -->
+  <nav id="nav-side">
+   <div id="nav-side-photo" class="container">
+    <img src="https://i1.rgstatic.net/ii/profile.image/682625744252928-1539762068019_Q128/Geoffrey_Monet.jpg" alt="Geoffrey Monet" class="nova-e-avatar__img">
+   </div>
+   <div id="nav-side-header" class="container">
+    <a href="https://www.linkedin.com/in/gmonet" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.researchgate.net/profile/Geoffrey_Monet" target="_blank"><i
+						class="fab fa-researchgate"></i></a>
+    <!-- <a href="https://www.facebook.com/geoffrey.monet.9" target="_blank"><i class="fab fa-facebook"></i></a> -->
+    <a href="https://twitter.com/GeoffreyMonet"><i class="fab fa-twitter" target="_blank"></i></a>
+    <a href="https://github.com/gmonet" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:geoffrey.monet@u-psud.fr"><i class="fas fa-at"></i></a>
+   </div>
 
-	<section id="languages" class="row">
-		<aside class="col-sm-3">
-			<h3>Languages</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="language">
-					<strong>English</strong>
-				</div>
-				<div class="fluency">
-					Native speaker
-				</div>
-			</div>
-			</div>
-		</div>
-	</section>
+   <div class="container" style="flex-direction: column">
+    <ul class="list-unstyled components">
+     <li>
+      <a href="#formations" class="nav-side-button">
+       <div class="icon"><i class="fas fa-atom fa"></i></div>
+       <div class="text-icon">Education</div>
+      </a>
+     </li>
+     <li>
+      <a href="#experiences" class="nav-side-button">
+       <div class="icon"><i class="fas fa-briefcase fa"></i></div>
+       <div class="text-icon">Experiences</div>
+      </a>
+     </li>
+     <li>
+      <a href="#competences" class="nav-side-button">
+       <div class="icon"><i class="fas fa-book fa"></i></div>
+       <div class="text-icon">Skills</div>
+      </a>
+     </li>
+     <li>
+      <a href="#publications" class="nav-side-button">
+       <div class="icon"><i class="fas fa-file-alt fa"></i></div>
+       <div class="text-icon">Publication</div>
+      </a>
+     </li>
+     <li>
+      <a href="#conferences" class="nav-side-button">
+       <div class="icon"><i class="fas fa-comment fa"></i></div>
+       <div class="text-icon">Conferences</div>
+      </a>
+     </li>
+     <li>
+      <a href="#langues" class="nav-side-button">
+       <div class="icon"><i class="fas fa-globe-europe fa"></i></div>
+       <div class="text-icon">Languages</div>
+      </a>
+     </li>
+     <li>
+      <a href="#hobbies" class="nav-side-button">
+       <div class="icon"><i class="fas fa-swimmer fa"></i></div>
+       <div class="text-icon">Hobbies</div>
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
 
-	<section id="interests" class="row">
-		<aside class="col-sm-3">
-			<h3>Interests</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-6">
-				<div class="name">
-					<h4>Wildlife</h4>
-				</div>
-				<ul class="keywords">
-					<li>Ferrets</li>
-					<li>Unicorns</li>
-				</ul>
-			</div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="references" class="row">
-		<aside class="col-sm-3">
-			<h3>References</h3>
-		</aside>
-		<div class="col-sm-9">
-			<div class="row">
-			<div class="col-sm-12">
-				<blockquote class="reference">
-					<p>It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</p>
-					<p class="name">
-						<strong>— Erlich Bachman</strong>
-					</p>
-				</blockquote>
-			</div>
-			</div>
-		</div>
-	</section>
 
-	</div>
-	
-	</body>
+  <div id="content">
+   <!-- Navigation top bar -->
+   <nav id="nav-top">
+    <button id="btn-collapse-side-nav">
+					<i class="fas fa-address-book fa-2x"></i>
+				</button>
+    <h1 id="nav-top-name">Geoffrey Monet</h1>
+    <a href="./CV_MONET.pdf" target="_blank">
+     <!-- <button class="btn btn-info navbar-btn">
+						<i class="fa fa-download"></i>
+						Télecharger en pdf
+					</button> -->
+    </a>
+   </nav>
+
+   <!-- Main content -->
+   <main role="main">
+    <!-- Formations -->
+    <div name="formations" id="formations">
+     <h1> Education </h1>
+     <table>
+      <tbody>
+       <tr>
+        <td>2016-2019</td>
+        <td>Laboratoire de Physique des Solides (Orsay)</td>
+        <td>PhD in physics</td>
+       </tr>
+       <tr>
+        <td>2015-2016</td>
+        <td>Université Paris-Saclay / ENS</td>
+        <td>Master 2 "Fundamental Concepts of Physics" Specialty "Condensed Matter"
+         <br> Mention: <strong>Very good</strong></td>
+       </tr>
+       <tr>
+        <td>2014-2015</td>
+        <td rowspan="2">Magistère de Physique Fondamentale (Orsay)</td>
+        <td>Master 1 in Fundamental Physics<br> Mention: <strong>Very good</strong><br>
+         <small>Mechanics of fluids, optics, atomic physics, particles, plasmas and neutrons physics</small></td>
+       </tr>
+       <tr>
+        <td>2013-2014</td>
+        <td>Bachelor's degree in fundamental physics<br> Mention: <strong>Very good, congratulations from the jury</strong><br>
+         <small>Quantum mechanics, analytics, electromagnetism, statistical physics and mathematics</small></td>
+       </tr>
+       <tr>
+        <td>2012-2013</td>
+        <td>École des Mines d’Albi</td>
+        <td>Student Engineer<br> Mention : <strong>Very good</strong></td>
+       </tr>
+       <tr>
+        <td>2009-2012</td>
+        <td>Lycée Bellevue (Toulouse)</td>
+        <td>Preparatory class for grandes écoles<br> Section: Mathematics / Physics (MPSI-MP)</td>
+       </tr>
+       <tr>
+        <td>2009</td>
+        <td>Castres</td>
+        <td>Scientific Baccalaureate<br> Mention : <strong>Good</strong></td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+
+    <!-- Expériences professionnelles -->
+    <div name="experiences" id="experiences">
+     <h1> Experiences </h1>
+     <table>
+      <tbody>
+       <colgroup>
+        <col style="width: 2.5cm">
+       </colgroup>
+       <tr>
+        <td>2016-2019</td>
+        <td>Laboratoire de Physique des Solides (Orsay)</td>
+        <td>40 months</td>
+        <td>Internship and thesis on the structure of aluminum oxide nanotubes and properties of nanoconfined water - <a href="http://www.theses.fr/s162563">Link</a> to these.fr
+         <br>
+         <strong>Teaching</strong></td>
+       </tr>
+       <tr>
+        <td>2015</td>
+        <td>CERN (Switzerland)</td>
+        <td>2.5 months</td>
+        <td>Internship on event reconstruction for a new generation calorimeter
+        </td>
+       </tr>
+       <tr>
+        <td>2014</td>
+        <td>CSNSM (Orsay)</td>
+        <td>1.5 months</td>
+        <td>Internship on the polarization of excited nuclei</td>
+       </tr>
+       <tr>
+        <td>2013</td>
+        <td>S.A.S Ballario et Fils (Albi)</td>
+        <td>1 month</td>
+        <td>Internship</td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+
+    <!-- Compétence -->
+    <div name="competences" id="competences">
+     <h1> Skills </h1>
+     <div>
+      <h4> Transversal science and technology </h1>
+       <p>Scientific writing, scientific monitoring, written and oral communication, teaching.
+       </p>
+     </div>
+     <div>
+      <h4> Experimental science </h1>
+       <p>X-ray scattering, inelastic neutron scattering, X-ray absorption spectroscopy, infrared spectroscopy, NMR spectroscopy, Raman spectroscopy.</p>
+     </div>
+     <div>
+      <h4> Numerical </h1>
+       <p>Python, C/C++, Matlab, Maple, Git, Linux, Adobe Illustrator, Adobe Premier Pro, Office, LaTeX, Zotero, Qt, Blender, Unreal Engine 4, HTML/CSS, JavaScript</p>
+     </div>
+    </div>
+
+    <!-- Publications -->
+    <div name="publications" id="publications">
+     <h1> Publications </h1>
+     <ul>
+      <li>E. Paineau, M. S. Amara, <strong>G. Monet</strong>, V. Peyre, S. Rouzière et P. Launois,
+       <cite>Effect of Ionic Strength on the Bundling of Metal Oxide Imogolite Nanotubes</cite>,
+       <a href="https://doi.org/10.1021/acs.jpcc.7b07391">The Journal of Physical Chemistry C</a> 121, 21740-21749 (2017)</li>
+      <li><strong>G. Monet</strong>, M. S. Amara, S. Rouzière, E. Paineau, Z. Chai, J. D. Elliott, E. Poli, L.-M. Liu, G. Teobaldi et P. Launois,
+       <cite>Structural resolution of inorganic nanotubes with complex stoichiometry</cite>,
+       <a href="https://doi.org/10.1038/s41467-018-04360-z">Nature Communications</a> 9, 2033 (2018)</li>
+      <li>E. Paineau, <strong>G. Monet</strong>, V. Peyre, C. Goldmann, S. Rouzière et P. Launois,
+       <cite>Colloidal Stability of Imogolite Nanotubes Dispersions : A Phase Diagram Study</cite>,
+       <a href="https://doi.org/10.1021/acs.langmuir.9b01922">Langmuir</a> (2019)
+      </li>
+      <li><strong>G. Monet</strong>, M.S. Amara, Z. Chai, E. Paineau, A. Orecchini, M. Jimenéz-Ruiz, A. Ruiz-Caridad, L. Fine, S. Rouzière, L.-M. Liu, G. Teobaldi, S. Rols et P. Launois,
+       <cite>Control of the structure and dynamics of water by inorganic nanotubes</cite>, article en préparation (2019).</li>
+      <li><strong>G. Monet</strong> and al., article in preparation on the transformation of GeOH nanotubes into temperature</li>
+     </ul>
+    </div>
+
+    <!-- Conférences -->
+    <div name="conferences" id="conferences">
+     <h1> Conferences </h1>
+     <ul>
+      <li> <a href="http://www.rayonsxetmatiere.org/wp-content/uploads/2017/11/RX2017-recueil_des_resumes_final_LR.pdf">12ème
+								colloque de Rayons X et Matière (RX2017)</a>,
+       <cite>Résolution quantitative de la structure de nanotubes d’oxydes métalliques : mise en
+								évidence d’une nouvelle chiralité</cite>, Lille (France), Novembre 2017.
+       <strong>Oral</strong>.</li>
+      <li><a href="https://ecm31.ecanews.org/en/">ECM31</a>,
+       <cite>Structural resolution of inorganic nanotubes with complex stoichiometry</cite>, Oviedo (Espagne), Août 2018.
+       <strong>Oral</strong>.</li>
+      <li><a href="https://jmc2018.sciencesconf.org/">16ème édition des journées de la matière
+								condensée (JMC)</a>,
+       <cite>Structural resolution of inorganic nanotubes with complex stoichiometry</cite>, Grenoble (France), Septembre 2018.
+       <strong>Oral</strong>.</li>
+      <li><a href="https://www.synchrotron-soleil.fr/en/events/sum-2019-soleil-users-meeting">14th
+								Soleil Users’ meeting</a>,
+       <cite>Structural resolution of inorganic nanotubes with complex stoichiometry</cite>, Gif-sur-Yvette (France), Janvier 2019.
+       <strong>Oral</strong>.</li>
+      <li><a href="https://euroclay2019.sciencesconf.org/">Euroclay2019</a>,
+       <cite>Structural resolution of clay-like nanotubes</cite>, Paris (France), Juillet 2019.
+       <strong>Oral</strong>.</li>
+      <li><a href="https://euroclay2019.sciencesconf.org/">Euroclay2019</a>,
+       <cite>Unique properties of alumino-germanate imogolite nanotubes as water
+								nanocontainers</cite>, Paris (France), Juillet 2019.
+       <strong>Oral</strong>.</li>
+      <li><a href="https://jdn-conference.net/index.html">Journées de la Diffusion Neutronique</a>,
+       <cite>Unique properties of alumino-germanate imogolite nanotubes as water
+								nanocontainers</cite>, Saint-Martin-de-Londres (France), Septembre 2019.
+       <strong>Oral</strong>.</li>
+     </ul>
+    </div>
+
+    <!-- Langues -->
+    <div name="langues" id="langues">
+     <h1> Languages </h1>
+     <p>French and English</p>
+    </div>
+
+    <!-- Centres d'intérêt -->
+    <div name="hobbies" id="hobbies">
+     <h1> Hobbies </h1>
+     <p>Swimming and water sports, Aikido, Computer science</p>
+    </div>
+
+
+   </main>
+  </div>
+ </div>
+
+ <!-- Script -->
+ <script type="text/javascript">
+  // https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+   var currentScrollPos = window.pageYOffset;
+   if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav-top").style.top = "0";
+   } else {
+    document.getElementById("nav-top").style.top = "-50px";
+   }
+   prevScrollpos = currentScrollPos;
+  }
+ </script>
+
+ <script type="text/javascript">
+  $('#btn-collapse-side-nav').on('click', function() {
+   $('#nav-side, #btn-collapse-side-nav').toggleClass('active');
+   // $('.collapse.in').toggleClass('in');
+   // $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+  });
+  $(".nav-side-button").on('click', function(event) {
+   if (window.matchMedia("(max-width: 768px)").matches) {
+    $('#nav-side, #btn-collapse-side-nav').toggleClass('active');
+   }
+  });
+ </script>
+</body>
+
 </html>
