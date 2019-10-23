@@ -48,7 +48,7 @@ var refYoutube =
       }
   }
 }
-switchFilteringVideo();
+
 
 function loadStuctureImogoliteVid(){
   ytplayer_imo = new YT.Player('structureImogolite', {
@@ -96,6 +96,7 @@ function loaddrx3dSiCH3_xz(){
 // Youtube Player chapter1
 var ytplayer_imo, ytplayer_filtrage;
 function onYouTubeIframeAPIReady() {
+
   ytplayer_filtrage = new YT.Player('ytplayer_filtrage', {
     videoId: 'jaranrk1YMw',
     playerVars:{
@@ -104,6 +105,7 @@ function onYouTubeIframeAPIReady() {
       'showinfo':0,}
   });
   ytplayer_filtrage['a'].classList.add('youtube-video');
+  switchFilteringVideo();
 }
 
 function switchFilteringVideo(){

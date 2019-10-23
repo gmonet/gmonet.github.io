@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/these.css">
+
+</head>
+
+<body>
+  <header>
+    <strong>PRL2019 - </strong> <em>Control of the structure and dynamics of water by inorganic nanotubes</em> - G.Monet
+    et al.
+
+  </header>
+
+  <div class="container-fluid"
+    style="max-width: 1000px; border-left-width: 1px; border-left-style: solid; border-right-width: 1px; border-right-style: solid ">
+    <!-- En tête -->
+    <div>
+      <p style="text-align: center; font-size: 30pt ">Supplemental Material
+      </p>
+      <p style="text-align: center; font-size: 25pt">Control of the structure and dynamics of water by inorganic
+        nanotubes
+      </p>
+      <p style="text-align: center; font-size: 18pt ; font-style: italic">G.Monet, M.S.Amara, Z.Chai, E.Paineau,
+        A.Orecchini, M.Jimenéz-Ruiz, A.Ruiz-Caridad, L.Fine, S.Rouzière, L.-M.Liu, G.Teobaldi, S.Rols, P.Launois
+      </p>
+    </div>
+
+
+    <!-- Chapitre 4 -->
+    <h3>Filtering</h3>
+    <div id="btn-filtrage" onchange="switchFilteringVideo()">
+      <div id='btn-group-state' class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-outline-success active">
+          <input type="radio" name="state" value='dry' autocomplete="off" checked=""> Sec
+        </label>
+        <label class="btn btn-outline-success">
+          <input type="radio" name="state" value='pHyd' autocomplete="off"> pHyd
+        </label>
+      </div>
+
+      <div id='btn-group-H' class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-outline-primary active">
+          <input type="radio" name="selectH" value='Hout' autocomplete="off" checked> H<sub>out</sub>
+        </label>
+        <label class="btn btn-outline-primary">
+          <input type="radio" name="selectH" value='Hin' autocomplete="off"> H<sub>int</sub>
+        </label>
+        <label id="btn-HH2O" class="btn btn-outline-primary">
+          <input type="radio" name="selectH" value='HH2O' autocomplete="off"> H<sub>H2O</sub>
+        </label>
+      </div>
+
+      <!-- Hout -->
+      <div id='btn-group-Hout' class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-outline-secondary active">
+          <input type="radio" name="select-vib-Hout" autocomplete="off" value='stretA' checked> Stret. A
+        </label>
+        <label class="btn btn-outline-secondary">
+          <input type="radio" name="select-vib-Hout" autocomplete="off" value='stretBC'> Stret. B et C
+        </label>
+        <label class="btn btn-outline-secondary">
+          <input type="radio" name="select-vib-Hout" autocomplete="off" value='bendA'> Bend. A
+        </label>
+        <label class="btn btn-outline-secondary">
+          <input type="radio" name="select-vib-Hout" autocomplete="off" value='bendB'> Bend. B
+        </label>
+        <label class="btn btn-outline-secondary">
+          <input type="radio" name="select-vib-Hout" autocomplete="off" value='bendC'> Bend. C
+        </label>
+      </div>
+
+      <!-- Hin -->
+      <div id='btn-group-Hin' class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-outline-secondary active">
+          <input type="radio" name="select-vib-Hin" autocomplete="off" value='twist' checked> Twist.
+        </label>
+        <label class="btn btn-outline-secondary">
+          <input type="radio" name="select-vib-Hin" autocomplete="off" value='scis'> Scis.
+        </label>
+        <label class="btn btn-outline-secondary">
+          <input type="radio" name="select-vib-Hin" autocomplete="off" value='stret' checked> Stret
+        </label>
+      </div>
+
+      <!-- HH2O -->
+      <div id='btn-group-HH2O' class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-outline-secondary active">
+          <input type="radio" name="select-vib-HH2O" autocomplete="off" value='trans' checked> Trans.
+        </label>
+        <label class="btn btn-outline-secondary">
+          <input type="radio" name="select-vib-HH2O" autocomplete="off" value='lib'> Lib.
+        </label>
+        <label class="btn btn-outline-secondary">
+          <input type="radio" name="select-vib-HH2O" autocomplete="off" value='bend'> Bend.
+        </label>
+        <label class="btn btn-outline-secondary">
+          <input type="radio" name="select-vib-HH2O" autocomplete="off" value='stret'> Stret.
+        </label>
+      </div>
+    </div>
+    <figure class="figure">
+      <div id="ytplayer_filtrage"></div>
+      <figcaption id="figcaption-GeOH" class="figure-caption">Sec Hout Stretching A.</figcaption>
+    </figure>
+
+
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://www.youtube.com/player_api"></script>
+  <script src="/scripts/main.js"></script>
+  
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+</body>
+
+</html>
