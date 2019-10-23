@@ -7,6 +7,17 @@ body{
  width: 100%;
 }
 
+main{
+ margin: 0px 3%
+}
+
+a{
+ border: none;
+ color: #6B5B95;
+ font: inherit;
+ text-decoration: none;
+ outline: none;
+}
 .container{
  display: flex;
 }
@@ -17,8 +28,17 @@ button, button:focus{
  border: none;
  color: inherit;
  outline: none;
+ cursor: inherit;
 }
 
+table {
+ border-collapse: collapse;
+}
+
+th, td {
+ border-top: 1px solid #ddd;
+ padding: 5px;
+}
 /* ---------------
      Navigation
    ---------------*/
@@ -26,12 +46,13 @@ button, button:focus{
 nav{
  transition: all 0.3s;
 }
+
 /* Nav Side */
 #nav-side{
  flex: none;
  width: 4cm;
  height: 100vh;
- background-color: darkcyan;
+ background-color: #6B5B95;
  position: sticky;
  top: 0;
 }
@@ -40,34 +61,24 @@ nav{
  margin-left: -4cm;
 }
 
-#nav-side .container{
- flex-direction: column;
-}
-
 #nav-side ul{
  list-style: none;
  padding: 0;
-}
-
-#nav-side li{
- padding: 10px 5px;
- border: none;
- color: white;
-}
-
-#nav-side li:hover{
- background: white;
- color: black;
+ margin: 0;
 }
 
 #nav-side a{
  display: flex;
  align-items: center;
 
- color: inherit;
- font: inherit;
- text-decoration: none;
- outline: none;
+ padding: 5px 5px;
+
+ color: white;
+}
+
+#nav-side a:hover{
+ background: white;
+ color: black;
 }
 
 #nav-side .icon{
@@ -75,41 +86,49 @@ font-size: 2em;
 flex: 0 0 1cm;
 }
 
+#nav-side-photo{
+ justify-content: center;
+ background-color: #42385a;
+ padding: 5px 0px;
+}
+
+#nav-side-header{
+ justify-content: center;
+ background-color: #42385a;
+ border-bottom-style: solid;
+ padding-bottom: 4px;
+}
+
 /* Nav Top */
 #nav-top{
- background-color: #f8f9fa;
- padding: 15px 10px;
- box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
  display: flex;
+ background-color: #f8f9fa;
+ padding: 8px 10px;
+ box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
  justify-content: space-between;
+ align-items: center;
 }
 
 #btn-collapse-side-nav, #btn-collapse-side-nav:focus{
  z-index: 9999;
  border-radius: 4px;
- color: #fff;
- background-color: #7386D5;
- border-color: #7386D5;
- box-shadow: 0 0 0 0.2rem rgb(82, 96, 155);
-}
-#btn-collapse-side-nav:hover, #btn-collapse-side-nav:active  {
- color: #7386D5;
- background-color: #fff;
- border-color: #7386D5;
- box-shadow: 0 0 0 0.2rem rgb(82, 96, 155);
-}
-/* button, button:focus{
- font: inherit;
- background: transparent;
- border: none;
- color: white;
- outline: none;
+ color: #6B5B95;
+ background-color: transparent;
+ border-color: transparent;
+ box-shadow: none;
 }
 
-button:hover{
- background: white;
- color: black;
-} */
+#btn-collapse-side-nav:hover, #btn-collapse-side-nav:active  {
+ color: white;
+ background-color: #6B5B95;
+ border-color: none;
+ box-shadow: none;
+}
+
+#nav-top-name{
+ margin: 0;
+}
+
 
 @media (max-width: 768px) {
  #nav-side{
@@ -121,6 +140,7 @@ button:hover{
  #nav-side.active{
   margin-left: 0;
  }
+
  #btn-collapse-side-nav.active{
   position: absolute;
   right: 5px;
