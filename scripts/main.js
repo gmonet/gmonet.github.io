@@ -98,18 +98,21 @@ var ytplayer_imo, ytplayer_filtrage;
 function onYouTubeIframeAPIReady() {
 
   ytplayer_filtrage = new YT.Player('ytplayer_filtrage', {
-    videoId: 'jaranrk1YMw',
+    videoId: 'Exq1NgVvaPw',
     playerVars:{
       'autoplay':0,
       'rel':0,
-      'showinfo':0,}
+      'showinfo':0,
+      'modestbranding':0,
+      'iv_load_policy':3,
+      'enablejsapi':1}
   });
   ytplayer_filtrage['a'].classList.add('youtube-video');
   switchFilteringVideo();
 }
 
 function switchFilteringVideo(){
-  var selectState, selectH, selectVib
+  var selectState, selectH, selectVib;
   // document.getElementById(btn-dry);
   var element_state = document.getElementById('btn-group-state');
   for(let element of element_state.getElementsByTagName('input')){
@@ -161,7 +164,7 @@ function switchFilteringVideo(){
       break;
     }
   }
-
+  
   // Hide HH2O button when dry state selected
   var element_btnHH2O = document.getElementById('btn-HH2O');
   if (selectState=='dry'){
@@ -176,8 +179,9 @@ function switchFilteringVideo(){
   } else {
     element_btnHH2O.style.display = 'inline-block';
   }
-
+  
   var data_filtrage = refYoutube[selectState][selectH][selectVib];
+  console.log(data_filtrage[0]);
   ytplayer_filtrage.loadVideoById(data_filtrage[0]);
 
   var element_caption = document.getElementById('figcaption-GeOH');
