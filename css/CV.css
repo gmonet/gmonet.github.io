@@ -158,12 +158,16 @@ nav {
       ---------------*/
 /* https://www.w3schools.com/howto/howto_css_tooltip.asp */
 /* http://jsfiddle.net/AndreaLigios/jtLbpy62/2281/ */
+[data-tooltip] {
+  border-bottom: 1px dotted black;   
+}
+
 [data-tooltip]:before {
   /* needed - do not touch */
   content: attr(data-tooltip);
   position: absolute;
   opacity: 0;
-  
+  left: 30%;
   /* customizable */
   transition: all 0.15s ease;
   padding: 10px;
@@ -186,9 +190,6 @@ nav {
   pointer-events: none;
 }
 
-tt {
-  color: #6B5B95;
- }
  
 /* Tooltip container */
 .tooltip {
