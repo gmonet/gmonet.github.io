@@ -1,0 +1,54 @@
+<nav class="navTop">
+    {% for item in site.data.navigation %}
+    
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="current" {% else %}
+            {% endif %}>
+        {{ item.name }}
+        </a>
+    {% endfor %}
+    {% assign beatles = page.url | split: "/" %}
+    {% if beatles == empty %}
+        <a href="./en" class="language">
+            <!-- Switch to en -->
+            <img
+            src="/assets/images/eng.svg"
+            alt="un triangle aux trois côtés égaux"
+            width="40px"
+            height="30px" />    
+        </a>
+    {% elsif beatles[-1] == 'fr' %}
+        <a href="{{ page.url | replace: "/fr/", "/en/" }}" class="language">
+            <!-- Switch to en -->
+            <img
+            src="/assets/images/eng.svg"
+            alt="Switch to english"
+            width="40px"
+            height="30px" />    
+        </a>
+    {% elsif beatles[-1] == 'en' %}
+        <a href="{{ page.url | replace: "/en/", "/fr/" }}" class="language">
+            <!-- Switch to fr -->
+            <img
+            src="/assets/images/fra.svg"
+            alt="Switch to french"
+            width="40px"
+            height="30px" />
+        </a>
+        
+    {% else %}
+        <a href="./en{{ page.url }}" class="language">
+            <img
+            src="/assets/images/eng.svg"
+            alt="un triangle aux trois côtés égaux"
+            width="40px"
+            height="30px" />
+        </a>
+            
+    {% endif %}
+    <!-- {% if page.url %}
+    
+    {% endif %}
+    <a href="">
+
+    </a> -->
+</nav>

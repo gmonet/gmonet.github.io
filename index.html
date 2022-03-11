@@ -1,0 +1,24 @@
+---
+# front matter tells Jekyll to process Liquid
+my_numder: 5
+layout: default
+title: Home
+---
+<h1>{{ "Hello World!" | downcase }}</h1>
+<a href="./about.html">about</a>
+
+# https://sebspain.co.uk/2018/03/07/autogenerate-bibliographies-jekyll-liquid-yaml.html
+
+
+<ul>
+{% for paper in site.data.bibliography.references limit:5 %}
+    <li>
+        {{ paper.authors }},
+        "{{ paper.title }}",
+        <em>{{ paper.journal }}</em>,
+        {% if paper.volume %} <strong>{{ paper.volume }}</strong>,{% endif %}
+        {{ paper.year }}.
+        <a href="http://dx.doi.org/{{ paper.doi }}">[DOI]</a>
+    </li>
+{% endfor %}
+</ul>
