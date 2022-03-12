@@ -54,3 +54,37 @@ nav.navTop a.language {
   order: 99;
   margin-left: auto
 }
+
+nav.navTop a.language img {
+  width: 30px;
+  aspect-ratio: 4 / 3;
+}
+nav.navTop a.language img:hover {
+  width: 32px;
+  aspect-ratio: 4 / 3;
+}
+#tooltipbar {
+  display: none;
+  position: fixed;
+  max-height: 20%;
+  overflow: auto;
+  // right:0;
+  // width: 
+  width:inherit;
+  max-width: inherit;
+  background: white;
+  // height:300px;
+  // margin-left:-25%;
+  // background:#063;
+  bottom:0px;
+  z-index:999;
+  padding: 5px;
+  border-top: 1px solid var(--clr-splitter-blockquote-and-section);
+
+  // left:50%;
+}
+// span {
+//   on
+//   onclick: "changeText(this)"
+// }
+

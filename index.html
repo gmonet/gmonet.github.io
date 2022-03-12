@@ -1,24 +1,31 @@
 ---
 # front matter tells Jekyll to process Liquid
-my_numder: 5
 layout: default
 title: Home
+lang: fr
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
-<a href="./about.html">about</a>
 
-# https://sebspain.co.uk/2018/03/07/autogenerate-bibliographies-jekyll-liquid-yaml.html
-
-
+<p>Bienvenu sur ma page !  </p>
+<p>Je m'appelle Geoffrey et je suis actuellement postdoctorant à l'Ecole Normale Supérieure de Paris dans l'équipe Micromegas du département de physique. </p>
+<p>Je m’intéresse aux questions suivantes :</p>
 <ul>
-{% for paper in site.data.bibliography.references limit:5 %}
-    <li>
-        {{ paper.authors }},
-        "{{ paper.title }}",
-        <em>{{ paper.journal }}</em>,
-        {% if paper.volume %} <strong>{{ paper.volume }}</strong>,{% endif %}
-        {{ paper.year }}.
-        <a href="http://dx.doi.org/{{ paper.doi }}">[DOI]</a>
-    </li>
-{% endfor %}
+    <li>Comment les molécules d’eau s’organisent elles dans un nanotube hydrophile ou hydrophobe ?</li>
+    <li>Comment modéliser les propriétés électrostatiques des molécules d’eau au contact d’une surface ? Comment expliquer la diminution de la constante diélectrique de l’eau dans des canaux de hauteur inférieur à 10nm ?</li>
+    <li>Comment les lois de la mécanique des fluides sont-elles modifiées aux échelles de l’ordre du nanomètre ?</li>
+    <li>Lorsque l’eau contient des ions, il existe un couplage non trivial entre solvant et soluté. Comment caractériser un tel couplage ? </li>
 </ul>
+
+
+<p>Toute ces questions font parties de champs de recherche qui existe depuis une quinzaine d’année : la nanofluidique. Pourquoi je m’y intéresse :</p>
+<ul>
+    <li>A l’échelle du nanomètre et sous l’effet de la prédominance des effets de surface, de nouvelle propriété émergent rendant possible le développement de nouveau dispositif fluidique …</li>
+</ul>
+
+<p>Dans la pratique et au jour le jour, je m’emploie à répondre à ces questions aux moyens :</p>
+<ul>
+    <li>D’études expérimentales. Durant ma thèse, j’ai étudié le confinement de molécules d’eau dans des nanotubes d’imogolite à l’aide d’expériences de diffusions de rayons X et de diffusion inélastique de neutrons. </li>
+    <li>De modélisation théorique et analytique. En effet, durant mon post-doc au Laboratoire de Physique Théorique de la Matière Condensée, j’ai développé un modèle de théorie des champs pour décrire les propriétés diélectriques de l’eau à proximité d’une surface hydrophobe.</li>
+    <li>D’analyse numérique. Une majeure partie de mon temps de recherche est consacré à l’écriture de code informatique haute performance, essentiellement en Python, pour à la fois analyser et modéliser des données d’expériences et des données de simulations de dynamiques moléculaires. </li>
+</ul>
+
+<p>Hormis la recherche, je me passionne pour les outils numériques de manière plus générale, de l’assemblage d’un ordinateur à l’expérimentation de codes de Deep Learning. Plus jeune, je consacrais de longues heures à des jeux de stratégie (Starcraft, Dune, Age Of Empire, Civlization). Lorsque j’ai besoin de dépenser, il me suffit de faire quelques longueurs dans la piscine municipale et si j’ai besoin de me ressourcer je fais de la randonnée en montage.</p>

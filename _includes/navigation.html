@@ -6,42 +6,37 @@
         {{ item.name }}
         </a>
     {% endfor %}
-    {% assign beatles = page.url | split: "/" %}
-    {% if beatles == empty %}
+
+    <!-- https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/ -->
+
+    {% assign split_url = page.url | split: "/" %}
+    {% if split_url == empty %}
         <a href="./en" class="language">
             <!-- Switch to en -->
             <img
-            src="/assets/images/eng.svg"
-            alt="un triangle aux trois côtés égaux"
-            width="40px"
-            height="30px" />    
+            src="/assets/images/en.svg"
+            alt="Switch to english"/>    
         </a>
-    {% elsif beatles[-1] == 'fr' %}
+    {% elsif split_url[-1] == 'fr' %}
         <a href="{{ page.url | replace: "/fr/", "/en/" }}" class="language">
             <!-- Switch to en -->
             <img
-            src="/assets/images/eng.svg"
-            alt="Switch to english"
-            width="40px"
-            height="30px" />    
+            src="/assets/images/en.svg"
+            alt="Switch to english"/>    
         </a>
-    {% elsif beatles[-1] == 'en' %}
+    {% elsif split_url[-1] == 'en' %}
         <a href="{{ page.url | replace: "/en/", "/fr/" }}" class="language">
             <!-- Switch to fr -->
             <img
-            src="/assets/images/fra.svg"
-            alt="Switch to french"
-            width="40px"
-            height="30px" />
+            src="/assets/images/fr.svg"
+            alt="Switch to french"/>
         </a>
         
     {% else %}
         <a href="./en{{ page.url }}" class="language">
             <img
-            src="/assets/images/eng.svg"
-            alt="un triangle aux trois côtés égaux"
-            width="40px"
-            height="30px" />
+            src="/assets/images/en.svg"
+            alt="Switch to english"/>
         </a>
             
     {% endif %}

@@ -13,8 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css?v=" | replace: "ColorScheme", ColorScheme | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!-- <link rel="stylesheet" href="{{ "/assets/css/colors-ColorScheme.css?v=" | replace: "ColorScheme", ColorScheme | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}"> -->
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="preload" href="{{site.logo | relative_url}}" as="image">
     <!--[if lt IE 9]>
@@ -59,12 +59,37 @@
             {% include navigation.html %}
         </div>
       {{ content }}
-
+        <div id="tooltipbar">
+          
+        </div>
       </section>
+      
       <footer>
         {%- include footer.html -%}
       </footer>
     </div>
+    <script>
+      function frame()
+      {
+        console.log('Event');
+        tooltipbar =document.getElementById("tooltipbar");
+        tooltipbar.innerHTML = this.attributes['data-tooltip'].value;
+        tooltipbar.style.display="block";
+        // this.style.color="blue";
+        // this.style.color="blue";
+      }
+      spans = document.querySelectorAll('span')
+      spans.forEach(span => {
+        span.addEventListener('click', frame);
+      });
+      // $('span').onmouseover(function() {
+      //   $(this).css('background-color','green');
+      // })
+      // document.querySelector('span').addEventListener('click', frame);
+      
+    </script>
+    
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+
   </body>
 </html>
