@@ -1,49 +1,45 @@
-<nav class="navTop">
-    {% for item in site.data.navigation %}
-    
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="current" {% else %}
-            {% endif %}>
+<nav>
+    {% if {{page.lang}} == "en" %}
+    {% for item in site.data.navigationen %}
+
+    <a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% else %} {% endif %}>
         {{ item.name }}
-        </a>
+    </a>
     {% endfor %}
+    {% endif %}
+    {% if {{page.lang}} == "fr" %}
+    {% for item in site.data.navigationfr %}
+
+    <a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% else %} {% endif %}>
+        {{ item.name }}
+    </a>
+    {% endfor %}
+    {% endif %}
+
 
     <!-- https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/ -->
-
     {% assign split_url = page.url | split: "/" %}
     {% if split_url == empty %}
-        <a href="./en" class="language">
-            <!-- Switch to en -->
-            <img
-            src="/assets/images/en.svg"
-            alt="Switch to english"/>    
-        </a>
-    {% elsif split_url[-1] == 'fr' %}
-        <a href="{{ page.url | replace: "/fr/", "/en/" }}" class="language">
-            <!-- Switch to en -->
-            <img
-            src="/assets/images/en.svg"
-            alt="Switch to english"/>    
-        </a>
-    {% elsif split_url[-1] == 'en' %}
-        <a href="{{ page.url | replace: "/en/", "/fr/" }}" class="language">
-            <!-- Switch to fr -->
-            <img
-            src="/assets/images/fr.svg"
-            alt="Switch to french"/>
-        </a>
-        
-    {% else %}
-        <a href="./en{{ page.url }}" class="language">
-            <img
-            src="/assets/images/en.svg"
-            alt="Switch to english"/>
-        </a>
-            
-    {% endif %}
-    <!-- {% if page.url %}
-    
-    {% endif %}
-    <a href="">
+    <a href="./en" class="language">
+        <!-- Switch to en -->
+        <img src="/assets/images/en.svg" alt="Switch to english" />
+    </a>
+    {% elsif split_url[1] == 'fr' %}
 
-    </a> -->
+    <a href="{{ page.url | replace: " /fr/", "/en/" }}" class="language">
+        <!-- Switch to en -->
+        <img src="/assets/images/en.svg" alt="Switch to english" />
+    </a>
+    {% elsif split_url[1] == 'en' %}
+    <a href="{{ page.url | replace: " /en/", "/fr/" }}" class="language">
+        <!-- Switch to fr -->
+        <img src="/assets/images/fr.svg" alt="Switch to french" />
+    </a>
+    {% else %}
+    <a href="./en{{ page.url }}" class="language">
+        <img src="/assets/images/en.svg" alt="Switch to english" />
+    </a>
+
+    {% endif %}
 </nav>
+<!-- </div> -->

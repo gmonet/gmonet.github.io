@@ -1,0 +1,13 @@
+[{
+  "name":"Home",
+  "link":"/en/"
+},
+{
+  "name":"Blog",
+  "link":"/en/blog.html"
+},
+{
+  "name":"Resume",
+  "link":"/en/about.html"
+}
+]

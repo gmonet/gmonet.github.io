@@ -1,0 +1,13 @@
+[{
+  "name":"Accueil",
+  "link":"/fr/"
+},
+{
+  "name":"Blog",
+  "link":"/fr/blog.html"
+},
+{
+  "name":"Mon CV",
+  "link":"/fr/about.html"
+}
+]

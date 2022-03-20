@@ -20,53 +20,83 @@
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    {% include head-custom.html %}
+    
   </head>
   
   
   <body>
-    
+    <div id="topbar">
+        <input id="toggle" class="checkbox" type="checkbox" name="" id="" />
+        <div for="toggle" class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+    </div>
     <div class="wrapper">
-      <div class="sidebar">
-        <header>
+      <header>
+        <div id="profile">
+        
           {% if site.logo %}
-            <img class="img-circle" src="{{site.logo | relative_url}}" alt="Logo">
+              <img class="img-circle" src="{{site.logo | relative_url}}" alt="Logo">
           {% endif %}
-
-          {% if site.blank_title %}
-            <h1>{{ site.title | default: site.github.repository_name }}</h1>
-          {% else %}
-            <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
-          {% endif %}
-
-          {% if site.email %}
-            <p class="addr"><i class="fa-regular fa-envelope"></i>&nbsp;{{ site.email }}</p>
-          {% endif %}
-
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-          {% include sidebar.html %}
-
-        </header>
-
-        {% include links-mobile.html %}
-        <div class="sidebar-footer">
-            {%- include footer.html -%}
-        </div>
-      </div>
-      <section>
-        <div class="topbar">
-            {% include navigation.html %}
-        </div>
-      {{ content }}
-        <div id="tooltipbar">
+          <div class="description">
+  
           
+          {% if site.blank_title %}
+              <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          {% else %}
+              <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+          {% endif %}
+  
+          {% if site.description!="" %}
+              <p>{{ site.description | default: site.github.project_tagline }}</p>
+          {% endif %}
+  
+          <div class="logo">
+              <a href="https://www.linkedin.com/in/gmonet">
+                  <img
+                  src="/assets/images/linkedin.svg"
+                  alt="Linkedin"/>    
+              </a>
+  
+              <a href="https://www.researchgate.net/profile/Geoffrey_Monet">
+                  <img
+                  src="/assets/images/researchgate.svg"
+                  alt="ResearchGate"/>    
+              </a>
+  
+              <a href="https://scholar.google.com/citations?user=dR8-JFeu_hoC">
+                  <img
+                  src="/assets/images/scholar.svg"
+                  alt="Google Scholar"/>    
+              </a>
+  
+              <a href="https://github.com/gmonet/">
+                  <img
+                  src="/assets/images/github.svg"
+                  alt="Github"/>    
+              </a>
+  
+              <a href="geoffrey.monet@ens.fr">
+                  <img
+                  src="/assets/images/mail.svg"
+                  alt="Contact me"/>    
+              </a>
+          </div>
+          </div>
+        </div>
+
+        {% include navigation.html %}
+      </header>
+      
+      <section>
+        {{ content }}
+        <div id="tooltipbar">
         </div>
       </section>
       
-      <footer>
-        {%- include footer.html -%}
-      </footer>
+
     </div>
     <script>
       function frame()
@@ -82,6 +112,16 @@
       spans.forEach(span => {
         span.addEventListener('click', frame);
       });
+
+      hamburger = document.querySelector('#toggle');
+      header = document.querySelector('header');
+      hamburger.onchange = function() {
+      if(hamburger.checked) {
+        header.style.transform = 'translateX(0)';
+      } else {
+        header.style.transform = 'translateX(-150%)';
+      }}
+
       // $('span').onmouseover(function() {
       //   $(this).css('background-color','green');
       // })
@@ -89,7 +129,7 @@
       
     </script>
     
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <!-- <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script> -->
 
   </body>
 </html>
