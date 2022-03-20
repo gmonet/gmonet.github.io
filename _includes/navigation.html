@@ -25,13 +25,12 @@
         <img src="/assets/images/en.svg" alt="Switch to english" />
     </a>
     {% elsif split_url[1] == 'fr' %}
-
-    <a href="{{ page.url | replace: " /fr/", "/en/" }}" class="language">
+    <a href="{{ page.url | replace: "/fr/", "/en/" }}" class="language">
         <!-- Switch to en -->
         <img src="/assets/images/en.svg" alt="Switch to english" />
     </a>
     {% elsif split_url[1] == 'en' %}
-    <a href="{{ page.url | replace: " /en/", "/fr/" }}" class="language">
+    <a href="{{ page.url | replace: "/en/", "/fr/" }}" class="language">
         <!-- Switch to fr -->
         <img src="/assets/images/fr.svg" alt="Switch to french" />
     </a>
