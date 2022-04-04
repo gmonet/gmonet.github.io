@@ -54,7 +54,8 @@ h6 {
 }
 
 a {
-  color: var(--clr-a-text);
+  // color: var(--clr-a-text);
+  color: #1b5c26;
   text-decoration: none;
 }
 
@@ -171,7 +172,9 @@ label {
   display: none;
 }
 
-
+span {
+  border-bottom: 1px solid #95c390;
+}
 
 @media print, screen and (max-width: 720px) {
   body {
@@ -186,7 +189,8 @@ label {
   section {
     float: none;
     position: static;
-    width: auto;
+    width: -webkit-fill-available;
+    // width: auto;
     float:right;
     padding-bottom:30px;
   }

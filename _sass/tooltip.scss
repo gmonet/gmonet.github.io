@@ -3,19 +3,12 @@
   position: fixed;
   max-height: 20%;
   overflow: auto;
-  // right:0;
-  // width: 
-  width:inherit;
   max-width: inherit;
   background: white;
-  // height:300px;
-  // margin-left:-25%;
-  // background:#063;
   bottom:0px;
   z-index:999;
   padding: 5px;
-  border-top: 1px solid var(--clr-splitter-blockquote-and-section);
-
-  // left:50%;
+  border-top: 2px solid;
+  border-image: radial-gradient(#1b5c26, rgba(0, 0, 0, 0)) 1;
 }
 

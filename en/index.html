@@ -5,5 +5,20 @@ layout: default
 title: Home
 lang: en
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
-<a href="./about.html">about</a>
+<p>Hi there !</p>
+<p>My name is Geoffrey and I am a physics researcher.</p>
+
+<h2>My research</h2>
+<p>I study how water molecules organize and flow in nanochannels. At the nanometer scale (one millionth of a millimeter), water can no longer be considered a homogeneous fluid. This is called nanofluidics. Water must be studied as a molecular system in order to properly describe its properties. This approach is essential to understand and reproduce some amazing functionalities of biological systems, such as the learning capacity of neural systems.</p>
+
+<p>If you are looking for more information about my research, my skills or my interests, please visit <a href="./about.html">my online resume</a> !</p>
+
+<h2>Last papers</h2>
+{% for paper in site.data.papers limit:5 %}
+      <li>
+      {{ paper.authors }}
+      <cite>{{ paper.title }}</cite>,
+      <a href="http://dx.doi.org/{{ paper.doi }}">{{ paper.journal }}</a>
+      {{ paper.volume}}, {{ paper.number }} ({{ paper.year }})
+      </li>
+{% endfor %}

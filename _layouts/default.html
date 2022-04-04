@@ -78,7 +78,7 @@
                   alt="Github"/>    
               </a>
   
-              <a href="geoffrey.monet@ens.fr">
+              <a href="mailto: geoffrey.monet@ens.fr">
                   <img
                   src="/assets/images/mail.svg"
                   alt="Contact me"/>    
@@ -91,6 +91,7 @@
       </header>
       
       <section>
+        <h1>{{ page.title }}</h1>
         {{ content }}
         <div id="tooltipbar">
         </div>
@@ -102,8 +103,8 @@
       function frame()
       {
         console.log('Event');
-        tooltipbar =document.getElementById("tooltipbar");
-        tooltipbar.innerHTML = this.attributes['data-tooltip'].value;
+        tooltipbar = document.getElementById("tooltipbar");
+        tooltipbar.innerHTML = this.innerHTML.charAt(0).toUpperCase() + this.innerHTML.slice(1) + ' - ' + this.attributes['data-tooltip'].value;
         tooltipbar.style.display="block";
         // this.style.color="blue";
         // this.style.color="blue";
