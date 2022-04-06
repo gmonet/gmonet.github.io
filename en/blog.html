@@ -7,8 +7,9 @@ lang: en
   {% for post in site.posts %}
     {% if post.lang contains 'en' %}
       <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {{ post.excerpt }}
+        {{ post.date | date_to_string }}
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <!-- {{ post.excerpt }} -->
       </li>
     {% endif %}
   {% endfor %}

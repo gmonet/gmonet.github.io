@@ -1,0 +1,51 @@
+{
+    "GeCH3": {
+        "CH3":
+            [{"link": "UXQUrPzYCkY", "name": "Twistting", "fmin": 70, "fmax": 78, "s": 1},
+             {"link": "4_doifJ1fDA", "name": "Stretching", "fmin": 12, "fmax": 25, "s": 5}],
+        
+    },
+    "GeOH": {
+        "pHyd":
+        {
+            "HH2O":
+            [
+                {"link": "jaranrk1YMw", "name": "Translation", "fmax": 8, "fmin": 22, "s": 2},
+                {"link": "ZH20JuEhths", "name": "Libration", "fmax": 55, "fmin": 100, "s": 2},
+                {"link": "3S4W-A0FlNI", "name": "Bending", "fmax": 196, "fmin": 210, "s": 5},
+                {"link": "pJM9meR4lGM", "name": "Stretching", "fmax": 400, "fmin": 452, "s": 5}
+            ],
+            "Hin":
+            [
+                {"link": "RkIPiaJMYs4", "name": "Twisting", "fmax": 126, "fmin": 151, "s": 5},
+                {"link": "tu2GnEy1MTM", "name": "Scissoring", "fmax": 151, "fmin": 166, "s": 5},
+                {"link": "cIq8u2Z0cdQ", "name": "Stretching", "fmax": 245, "fmin": 375, "s": 5}
+            ],
+            "Hout":
+            [
+                {"link": "l8gU1JEqE1M", "name": "Bending A", "fmax": 114, "fmin": 124, "s": 5},
+                {"link": "CZRCs37cXPw", "name": "Bending B", "fmax": 103, "fmin": 110, "s": 5},
+                {"link": "DqoEcYmMkLg", "name": "Bending C", "fmax": 95, "fmin": 102, "s": 5},
+                {"link": "5oBkUGO2ZH4", "name": "Stretching A", "fmax": 457, "fmin": 461, "s": 20},
+                {"link": "abAZHLEB9N0", "name": "Stretching B & C", "fmax": 465, "fmin": 470, "s": 20}
+            ]
+        },
+        "dry":
+        {
+            "Hin":
+            [
+                {"link": "8HJitv4wDBg", "name": "Twisting", "fmax": 2, "fmin": 52, "s": 1},
+                {"link": "o8FljIst79I", "name": "Scissoring", "fmax": 120, "fmin": 126, "s": 5},
+                {"link": "w0gFGxQ6cFM", "name": "Stretching", "fmax": 457, "fmin": 461, "s": 20}
+            ],
+            "Hout":
+            [
+                {"link": "L5glCUrt42g", "name": "Bending A", "fmax": 114, "fmin": 120, "s": 5},
+                {"link": "m6sinzeKwc8", "name": "Bending B", "fmax": 103, "fmin": 111, "s": 5},
+                {"link": "BDKGDZ2ywn0", "name": "Bending C", "fmax": 90, "fmin": 102, "s": 5},
+                {"link": "Exq1NgVvaPw", "name": "Stretching A", "fmax": 457, "fmin": 461, "s": 20},
+                {"link": "0DOgqdhQVZw", "name": "Stretching B & C", "fmax": 465, "fmin": 470, "s": 20}
+            ]
+        }
+    }
+}
